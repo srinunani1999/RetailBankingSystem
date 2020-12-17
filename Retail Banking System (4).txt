@@ -1,0 +1,55 @@
+title Retail Banking System
+
+participant Bank Portal
+
+participant Authentication Microservice
+participant Customer Microservice
+participant Account Microservice
+participant Transactions Microservice
+participant Rules Microservice
+
+
+Bank Portal->Authentication Microservice:Login request
+Authentication Microservice-->Bank Portal:JWT issued
+
+Bank Portal-->Customer Microservice:Request to create customer
+Customer Microservice-->Account Microservice:Create customers account
+Customer Microservice<--Account Microservice:Created current & savings account along with accountID
+Bank Portal<--Customer Microservice:Customer creation status
+
+Bank Portal-->Customer Microservice:Get customer details
+Bank Portal<--Customer Microservice:Displays customer details
+
+Bank Portal-->Customer Microservice:Get customer account details
+Customer Microservice-->Account Microservice:Get customer account 
+Account Microservice-->Customer Microservice:Array of account details with id and balances
+Customer Microservice-->Bank Portal:Displays customer account details
+
+Bank Portal-->Account Microservice:Get Account statements
+Bank Portal<--Account Microservice:Display Account statements
+
+Bank Portal-->Transactions Microservice:Deposit request
+Transactions Microservice-->Account Microservice:Deposit
+Account Microservice-->Transactions Microservice:Transaction status
+Transactions Microservice-->Bank Portal:Displays transaction status
+
+Bank Portal-->Transactions Microservice:Withdraw request
+Transactions Microservice-->Rules Microservice:Evaluate min balance
+Rules Microservice-->Transactions Microservice:RuleStatus
+Transactions Microservice-->Account Microservice:Withdraw
+Account Microservice-->Transactions Microservice:Withdraw status
+Transactions Microservice-->Bank Portal:Display withdraw status
+
+Bank Portal-->Transactions Microservice:Transfer money from source acc to destination acc
+Transactions Microservice-->Rules Microservice:Evaluate min balance
+Rules Microservice->Transactions Microservice:RuleStatus
+Transactions Microservice-->Bank Portal:Transfer Status
+
+
+
+
+
+
+
+
+

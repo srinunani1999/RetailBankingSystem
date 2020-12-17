@@ -1,0 +1,57 @@
+﻿@model RetailBankSystemClient.ViewModels.TransferViewModel
+
+@{
+    ViewData["Title"] = "transfer";
+}
+
+<h1>Transfer</h1>
+@{ 
+    var source_id = Model.Source_AccountId;
+}
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="transfer">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Source_AccountId" class="control-label">Source Account Id - <b>@source_id </b></label>
+                <input asp-for="Source_AccountId" class="form-control" value=@source_id hidden />
+                <span asp-validation-for="Source_AccountId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Target_AccountId" class="control-label"></label>
+                <input asp-for="Target_AccountId" class="form-control" />
+                <span asp-validation-for="Target_AccountId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="amount" class="control-label"></label>
+                <input asp-for="amount" class="form-control" placeholder="Enter Amount in Rs." />
+                <span asp-validation-for="amount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Transfer" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+    <div class="col-md-8 d-flex flex-column justify-content-center">
+        <div class="rounded d-flex flex-column justify-content-center">
+            <img class=" overflow-hidden" src="~/Images/Transferimage.jpg" />
+
+
+        </div>
+        <div class="rounded-top  bg-light">
+            <p>
+                Internet Banking offers you the ease and convenience of transacting in an environment you feel most comfortable with. You can check balances and transactions, transfer funds, withdrawl, deposits and much more, anywhere.
+
+            </p>
+
+        </div>
+
+
+    </div>
+</div>
+
+<div>
+    <a  asp-action="Index" asp-controller="Home">Back to Home</a>
+</div>
+

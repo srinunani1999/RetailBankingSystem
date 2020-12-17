@@ -1,0 +1,48 @@
+﻿@model RetailBankSystemClient.Models.User
+
+@{
+    ViewData["Title"] = "Login";
+}
+<p class="text-danger">@ViewBag.message</p>
+<h1>Login</h1>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Login">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="UserId" class="control-label"></label>
+                <input asp-for="UserId" class="form-control" />
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Username" class="control-label"></label>
+                <input asp-for="Username" class="form-control" />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" type="password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Role" class="control-label"></label>
+                <input asp-for="Role" class="form-control" />
+                <span asp-validation-for="Role" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Login" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+    <div class="col-md-8 rounded d-flex flex-column align-items-center justify-content-start  bg-light" id="loginimage">
+       
+        <h2 class="text-white font-weight-bold"> Our heartiest welcome to you!!</h2>
+        <p class="text-justify text-white font-weight-bold ">
+            Thanks for being a proud customer for our unique ,  trusted and  ever-expanding banking services.  We are honoured to have you with us always.
+
+        </p>
+
+
+    </div>
+</div>
+

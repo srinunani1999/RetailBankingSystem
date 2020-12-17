@@ -1,0 +1,46 @@
+﻿@model RetailBankSystemClient.ViewModels.DepositViewModel
+
+@{
+    ViewData["Title"] = "Deposit";
+}
+
+<h1>Deposit</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Deposit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="AccountId" class="control-label"></label>
+                <input asp-for="AccountId" class="form-control" />
+                <span asp-validation-for="AccountId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="amount" class="control-label"></label>
+                <input asp-for="amount" class="form-control" placeholder="Enter Amount in Rs." />
+                <span asp-validation-for="amount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Deposit" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+
+    <div class="col-md-8 d-flex flex-column justify-content-center">
+        <div class="rounded d-flex flex-column justify-content-center">
+            <img class=" overflow-hidden" src="~/Images/Deposit.png"  />
+           
+
+        </div>
+        <div class="rounded-top  bg-light">
+            <p>
+                Welcome Aboard, the Internet banking portal of our bank, enables its retail banking customers to operate their accounts from anywhere anytime, removing the restrictions imposed by geography and time. It's a platform that enables the customers to carry out their banking activities from their desktop, aided by the power and convenience of the Internet.
+            </p>
+
+        </div>
+
+
+    </div>
+</div>
+
+

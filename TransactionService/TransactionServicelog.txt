@@ -1,0 +1,638 @@
+2020-12-10 12:21:14,058 Application started. Press Ctrl+C to shut down.
+2020-12-10 12:21:14,071 Hosting environment: Development
+2020-12-10 12:21:14,073 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 12:47:56,764 Application started. Press Ctrl+C to shut down.
+2020-12-10 12:47:56,772 Hosting environment: Development
+2020-12-10 12:47:56,774 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 12:48:14,089 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TransactionService.Providers.IProvider' while attempting to activate 'TransactionService.Controllers.TransactionController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-10 12:48:28,951 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TransactionService.Providers.IProvider' while attempting to activate 'TransactionService.Controllers.TransactionController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-10 12:48:38,142 Application started. Press Ctrl+C to shut down.
+2020-12-10 12:48:38,155 Hosting environment: Development
+2020-12-10 12:48:38,157 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 12:48:49,931 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TransactionService.Providers.IProvider' while attempting to activate 'TransactionService.Controllers.TransactionController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-10 12:49:29,284 Application started. Press Ctrl+C to shut down.
+2020-12-10 12:49:29,307 Hosting environment: Development
+2020-12-10 12:49:29,309 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 12:49:41,078 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TransactionService.Providers.IProvider' while attempting to activate 'TransactionService.Controllers.TransactionController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-10 12:50:21,223 Application started. Press Ctrl+C to shut down.
+2020-12-10 12:50:21,239 Hosting environment: Development
+2020-12-10 12:50:21,241 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 12:50:35,685 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TransactionService.Providers.IProvider' while attempting to activate 'TransactionService.Controllers.TransactionController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-10 12:50:47,434 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TransactionService.Providers.IProvider' while attempting to activate 'TransactionService.Controllers.TransactionController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-10 12:51:01,705 Application started. Press Ctrl+C to shut down.
+2020-12-10 12:51:01,724 Hosting environment: Development
+2020-12-10 12:51:01,727 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 12:51:15,303 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TransactionService.Providers.IProvider' while attempting to activate 'TransactionService.Controllers.TransactionController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-10 12:51:36,099 Application started. Press Ctrl+C to shut down.
+2020-12-10 12:51:36,118 Hosting environment: Development
+2020-12-10 12:51:36,121 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 12:52:54,195 Application started. Press Ctrl+C to shut down.
+2020-12-10 12:52:54,213 Hosting environment: Development
+2020-12-10 12:52:54,216 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 12:53:06,341 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TransactionService.Providers.IProvider' while attempting to activate 'TransactionService.Controllers.TransactionController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-10 12:53:37,342 Application started. Press Ctrl+C to shut down.
+2020-12-10 12:53:37,357 Hosting environment: Development
+2020-12-10 12:53:37,359 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 12:53:48,309 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TransactionService.Providers.IProvider' while attempting to activate 'TransactionService.Controllers.TransactionController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-10 12:55:08,058 Application started. Press Ctrl+C to shut down.
+2020-12-10 12:55:08,067 Hosting environment: Development
+2020-12-10 12:55:08,068 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 12:55:19,951 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TransactionService.Providers.IProvider' while attempting to activate 'TransactionService.Controllers.TransactionController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-10 12:55:34,650 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TransactionService.Providers.IProvider' while attempting to activate 'TransactionService.Controllers.TransactionController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-10 12:56:31,665 Application started. Press Ctrl+C to shut down.
+2020-12-10 12:56:31,681 Hosting environment: Development
+2020-12-10 12:56:31,684 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 12:56:41,781 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TransactionService.Providers.IProvider' while attempting to activate 'TransactionService.Controllers.TransactionController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-10 12:57:16,531 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TransactionService.Providers.IProvider' while attempting to activate 'TransactionService.Controllers.TransactionController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-10 12:59:41,045 Application started. Press Ctrl+C to shut down.
+2020-12-10 12:59:41,063 Hosting environment: Development
+2020-12-10 12:59:41,065 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 13:00:32,248 Application started. Press Ctrl+C to shut down.
+2020-12-10 13:00:32,268 Hosting environment: Development
+2020-12-10 13:00:32,274 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 13:01:04,306 Calling Account Api......for account id 1
+2020-12-10 13:01:09,025 Exception occured while getting Account details for account id-> 1
+2020-12-10 13:01:09,066 Exception occured while getting Account details for account id-> 1
+2020-12-10 13:01:09,109 One or more errors occurred. (No connection could be made because the target machine actively refused it.): In Trasaction Controller
+2020-12-10 13:01:29,659 Calling Account Api......for account id 1
+2020-12-10 13:01:33,733 Exception occured while getting Account details for account id-> 1
+2020-12-10 13:01:33,771 Exception occured while getting Account details for account id-> 1
+2020-12-10 13:01:33,812 One or more errors occurred. (No connection could be made because the target machine actively refused it.): In Trasaction Controller
+2020-12-10 13:02:04,032 Exception occured while getting Account details for account id-> 1
+2020-12-10 13:02:04,080 Exception occured while getting Account details for account id-> 1
+2020-12-10 13:02:04,127 One or more errors occurred. (No connection could be made because the target machine actively refused it.): In Trasaction Controller
+2020-12-10 13:27:53,683 Application started. Press Ctrl+C to shut down.
+2020-12-10 13:27:53,694 Hosting environment: Development
+2020-12-10 13:27:53,696 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 13:28:25,577 Exception occured while getting Account details for account id-> 1
+2020-12-10 13:28:25,619 One or more errors occurred. (No connection could be made because the target machine actively refused it.)
+2020-12-10 13:28:25,661 unable to tranfer from account with account id 1 to target 2
+2020-12-10 13:28:41,713 Application started. Press Ctrl+C to shut down.
+2020-12-10 13:28:41,728 Hosting environment: Development
+2020-12-10 13:28:41,731 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 13:31:04,866 Application started. Press Ctrl+C to shut down.
+2020-12-10 13:31:04,875 Hosting environment: Development
+2020-12-10 13:31:04,878 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 16:52:55,040 Application started. Press Ctrl+C to shut down.
+2020-12-10 16:52:55,079 Hosting environment: Development
+2020-12-10 16:52:55,082 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 16:53:31,946 Calling Account Api......for account id 1
+2020-12-10 16:53:59,657 Value cannot be null. (Parameter 'Unable to fetch the Account from  Account API ')
+2020-12-10 16:54:02,793 Value cannot be null. (Parameter 'Unable to fetch the Account from  Account API ')
+2020-12-10 16:55:19,444 Application started. Press Ctrl+C to shut down.
+2020-12-10 16:55:19,465 Hosting environment: Development
+2020-12-10 16:55:19,468 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 16:56:38,807 Calling Account Api......for account id 1
+2020-12-10 16:58:35,003 Application started. Press Ctrl+C to shut down.
+2020-12-10 16:58:35,023 Hosting environment: Development
+2020-12-10 16:58:35,027 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 16:58:54,848 Calling Account Api......for account id 1
+2020-12-10 16:59:30,440 Account Api called
+2020-12-10 16:59:31,901 Deposit initiated for Account Id1
+2020-12-10 17:00:20,389 Deposit Completed successfully for Account Id1
+2020-12-10 17:00:35,172 Calling Account Api......for account id 1
+2020-12-10 17:00:37,875 Account Api called
+2020-12-10 17:00:37,875 Deposit initiated for Account Id1
+2020-12-10 17:00:37,908 Deposit Completed successfully for Account Id1
+2020-12-10 17:01:31,428 Calling Account Api......for account id 1
+2020-12-10 17:01:41,017 Account Api called
+2020-12-10 17:01:41,533 Deposit initiated for Account Id1
+2020-12-10 17:02:05,995 Deposit Completed successfully for Account Id1
+2020-12-10 17:02:11,256 Calling Account Api......for account id 1
+2020-12-10 17:02:13,103 Account Api called
+2020-12-10 17:02:14,027 Deposit initiated for Account Id1
+2020-12-10 17:04:45,184 Deposit Completed successfully for Account Id1
+2020-12-10 17:04:52,330 Calling Account Api......for account id 1
+2020-12-10 17:04:58,120 Account Api called
+2020-12-10 17:04:58,354 Deposit initiated for Account Id1
+2020-12-10 17:06:38,539 Not able to deposit in account with account id 1 and amount 100
+2020-12-10 17:06:38,577 One or more errors occurred. (A task was canceled.): In Provider method
+2020-12-10 17:07:37,775 One or more errors occurred. (A task was canceled.): In Trasaction Controller
+2020-12-10 17:07:43,464 Calling Account Api......for account id 1
+2020-12-10 17:08:08,999 Calling Account Api......for account id 1
+2020-12-10 17:08:24,489 Account Api called
+2020-12-10 17:08:25,345 Account Api called
+2020-12-10 17:08:26,143 Deposit initiated for Account Id1
+2020-12-10 17:08:26,824 Deposit initiated for Account Id1
+2020-12-10 17:18:59,044 Application started. Press Ctrl+C to shut down.
+2020-12-10 17:18:59,062 Hosting environment: Development
+2020-12-10 17:18:59,066 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 17:19:14,063 Calling Account Api......for account id 1
+2020-12-10 17:19:24,842 Account Api called
+2020-12-10 17:19:25,449 Deposit initiated for Account Id1
+2020-12-10 17:19:37,365 Not able to deposit in account with account id 1 and amount 100
+2020-12-10 17:19:37,403 One or more errors occurred. (An error occurred while sending the request.): In Provider method
+2020-12-10 17:24:06,755 One or more errors occurred. (An error occurred while sending the request.): In Trasaction Controller
+2020-12-10 17:29:17,814 Application started. Press Ctrl+C to shut down.
+2020-12-10 17:29:17,860 Hosting environment: Development
+2020-12-10 17:29:17,862 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 17:30:05,021 Calling Account Api......for account id 1
+2020-12-10 17:30:19,763 Account Api called
+2020-12-10 17:30:20,985 Deposit initiated for Account Id1
+2020-12-10 17:31:27,691 Value cannot be null. (Parameter 'Error in calling Account API to deposit money')
+2020-12-10 17:33:51,575 Value cannot be null. (Parameter 'Error in calling Account API to deposit money')
+2020-12-10 17:33:51,619 Value cannot be null. (Parameter 'Error in calling Account API to deposit money')
+2020-12-10 17:33:58,887 Calling Account Api......for account id 1
+2020-12-10 17:34:01,048 Account Api called
+2020-12-10 17:34:02,638 Deposit initiated for Account Id1
+2020-12-10 17:35:43,322 Not able to deposit in account with account id 1 and amount 100
+2020-12-10 17:35:43,363 One or more errors occurred. (A task was canceled.): In Provider method
+2020-12-10 17:41:01,131 One or more errors occurred. (A task was canceled.): In Trasaction Controller
+2020-12-10 17:41:15,787 Calling Account Api......for account id 1
+2020-12-10 17:41:18,105 Account Api called
+2020-12-10 17:41:18,337 Deposit initiated for Account Id1
+2020-12-10 17:41:20,265 Deposit Completed successfully for Account Id1
+2020-12-10 17:42:11,454 Calling Account Api......for account id 1
+2020-12-10 17:42:11,526 Account Api called
+2020-12-10 17:42:11,526 Deposit initiated for Account Id1
+2020-12-10 17:42:11,547 Deposit Completed successfully for Account Id1
+2020-12-10 17:44:15,002 Application started. Press Ctrl+C to shut down.
+2020-12-10 17:44:15,020 Hosting environment: Development
+2020-12-10 17:44:15,022 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 17:44:37,216 Calling Account Api......for account id 1
+2020-12-10 17:44:45,936 Account Api called
+2020-12-10 17:44:46,570 Deposit initiated for Account Id1
+2020-12-10 17:46:18,692 Application started. Press Ctrl+C to shut down.
+2020-12-10 17:46:18,707 Hosting environment: Development
+2020-12-10 17:46:18,709 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 17:46:33,653 Calling Account Api......for account id 1
+2020-12-10 17:46:35,469 Account Api called
+2020-12-10 17:46:35,931 Deposit initiated for Account Id1
+2020-12-10 17:47:26,438 Deposit Completed successfully for Account Id1
+2020-12-10 17:47:44,647 Calling Account Api......for account id 1
+2020-12-10 17:47:45,853 Account Api called
+2020-12-10 17:47:46,441 Deposit initiated for Account Id1
+2020-12-10 17:48:03,509 Deposit Completed successfully for Account Id1
+2020-12-10 17:48:41,785 Transaction history initiated for Customer Id: 1
+2020-12-10 17:49:05,044 Transaction history request complted for Customer Id: 1
+2020-12-10 18:23:32,856 Application started. Press Ctrl+C to shut down.
+2020-12-10 18:23:32,923 Hosting environment: Development
+2020-12-10 18:23:32,934 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 18:24:35,987 Calling Account Api......for account id 1
+2020-12-10 18:24:50,035 Account Api called
+2020-12-10 18:24:50,035 Deposit initiated for Account Id1
+2020-12-10 18:34:28,378 Application started. Press Ctrl+C to shut down.
+2020-12-10 18:34:28,392 Hosting environment: Development
+2020-12-10 18:34:28,395 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 18:34:58,538 Calling Account Api......for account id 1
+2020-12-10 18:34:59,230 Account Api called
+2020-12-10 18:34:59,230 Deposit initiated for Account Id1
+2020-12-10 18:35:09,949 Deposit Completed successfully for Account Id1
+2020-12-10 18:37:19,562 Calling Account Api......for account id 1
+2020-12-10 18:37:26,760 Evaluating Min Balance for 1
+2020-12-10 18:37:54,429 Insufficient Balance for account Id: 1
+2020-12-10 18:37:54,488 Exception occures while evaluating Minimum balance for account Id: 1
+2020-12-10 18:38:03,214 One or more errors occurred. (An error occurred while sending the request.): In Trasaction Controller
+2020-12-10 18:39:53,348 Calling Account Api......for account id 1
+2020-12-10 18:39:54,686 Evaluating Min Balance for 1
+2020-12-10 18:42:17,216 Calling Account Api......for account id 1
+2020-12-10 18:42:18,570 Evaluating Min Balance for 1
+2020-12-10 18:45:18,999 Insufficient Balance for account Id: 1
+2020-12-10 18:45:19,077 Exception occures while evaluating Minimum balance for account Id: 1
+2020-12-10 18:45:19,120 One or more errors occurred. (An error occurred while sending the request.): In Trasaction Controller
+2020-12-10 18:45:23,645 Calling Account Api......for account id 1
+2020-12-10 18:45:24,620 Evaluating Min Balance for 1
+2020-12-10 18:47:44,589 Calling Account Api......for account id 1
+2020-12-10 18:47:44,611 Evaluating Min Balance for 1
+2020-12-10 18:48:20,745 Calling Account Api......for account id 1
+2020-12-10 18:48:20,765 Evaluating Min Balance for 1
+2020-12-10 18:57:54,570 Calling Account Api......for account id 1
+2020-12-10 18:57:54,590 Account Api called
+2020-12-10 18:57:54,590 Deposit initiated for Account Id1
+2020-12-10 18:57:55,751 Deposit Completed successfully for Account Id1
+2020-12-10 18:58:07,197 Calling Account Api......for account id 1
+2020-12-10 18:58:07,209 Evaluating Min Balance for 1
+2020-12-10 18:58:29,791 Transaction history initiated for Customer Id: 1
+2020-12-10 18:58:29,792 Transaction history request complted for Customer Id: 1
+2020-12-10 18:59:28,624 Transfer  from Account Id: 1to Account Id2 Completed Successfully
+2020-12-10 19:00:09,895 Transaction history initiated for Customer Id: 1
+2020-12-10 19:00:09,895 Transaction history request complted for Customer Id: 1
+2020-12-10 19:01:30,810 Transfer  from Account Id: 1to Account Id2 Completed Successfully
+2020-12-10 19:02:25,466 Transfer  from Account Id: 1to Account Id2 Completed Successfully
+2020-12-10 19:04:16,759 Not able to deposit in account with account id 2 and amount 100
+2020-12-10 19:04:16,785 One or more errors occurred. (An error occurred while sending the request.)
+2020-12-10 19:04:16,813 unable to tranfer from account with account id 1 to target 2
+2020-12-10 19:04:16,839 One or more errors occurred. (An error occurred while sending the request.): In Trasaction Controller
+2020-12-10 19:07:15,330 Application started. Press Ctrl+C to shut down.
+2020-12-10 19:07:15,342 Hosting environment: Development
+2020-12-10 19:07:15,344 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 19:07:28,522 Transaction history initiated for Customer Id: 1
+2020-12-10 19:07:28,522 Transaction history request complted for Customer Id: 1
+2020-12-10 19:08:57,968 Calling Account Api......for account id 1
+2020-12-10 19:08:57,981 Account Api called
+2020-12-10 19:08:57,981 Deposit initiated for Account Id1
+2020-12-10 19:08:59,056 Deposit Completed successfully for Account Id1
+2020-12-10 19:09:15,462 Calling Account Api......for account id 1
+2020-12-10 19:09:15,476 Evaluating Min Balance for 1
+2020-12-10 19:09:56,845 Transfer  from Account Id: 1to Account Id2 Completed Successfully
+2020-12-10 19:10:46,707 Transfer  from Account Id: 1to Account Id2 Completed Successfully
+2020-12-10 19:14:15,554 Application started. Press Ctrl+C to shut down.
+2020-12-10 19:14:15,570 Hosting environment: Development
+2020-12-10 19:14:15,574 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 19:18:02,184 Calling Account Api......for account id 1
+2020-12-10 19:18:02,893 Account Api called
+2020-12-10 19:18:02,893 Deposit initiated for Account Id1
+2020-12-10 19:18:04,397 Deposit Completed successfully for Account Id1
+2020-12-10 19:19:41,339 Calling Account Api......for account id 1
+2020-12-10 19:19:41,375 Evaluating Min Balance for 1
+2020-12-10 19:20:20,954 Transaction history initiated for Customer Id: 1
+2020-12-10 19:20:20,955 Transaction history request complted for Customer Id: 1
+2020-12-10 19:21:28,774 Transfer  from Account Id: 1to Account Id2 Completed Successfully
+2020-12-10 19:22:30,332 Calling Account Api......for account id 2
+2020-12-10 19:22:30,365 Evaluating Min Balance for 2
+2020-12-10 19:30:25,937 Account Id0 or Amount0 is Invalid
+2020-12-10 19:34:04,870 Account Id0 or Amount0 is Invalid
+2020-12-10 19:35:38,171 Account Id0 or Amount0 is Invalid
+2020-12-10 19:41:21,776 Application started. Press Ctrl+C to shut down.
+2020-12-10 19:41:21,794 Hosting environment: Development
+2020-12-10 19:41:21,797 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 19:43:01,322 Application started. Press Ctrl+C to shut down.
+2020-12-10 19:43:01,339 Hosting environment: Development
+2020-12-10 19:43:01,342 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-10 19:43:36,441 Calling Account Api......for account id 1
+2020-12-10 19:43:36,864 Account Api called
+2020-12-10 19:43:36,864 Deposit initiated for Account Id1
+2020-12-10 19:43:47,803 Deposit Completed successfully for Account Id1
+2020-12-10 19:44:15,223 Calling Account Api......for account id 1
+2020-12-10 19:44:15,251 Account Api called
+2020-12-10 19:44:15,251 Deposit initiated for Account Id1
+2020-12-10 19:44:17,105 Deposit Completed successfully for Account Id1
+2020-12-10 19:44:24,873 Calling Account Api......for account id 1
+2020-12-10 19:44:24,887 Account Api called
+2020-12-10 19:44:24,887 Deposit initiated for Account Id1
+2020-12-10 19:44:26,241 Deposit Completed successfully for Account Id1
+2020-12-10 19:44:54,822 Calling Account Api......for account id 1
+2020-12-10 19:44:54,870 Evaluating Min Balance for 1
+2020-12-10 19:46:06,919 Transfer  from Account Id: 1to Account Id2 Completed Successfully
+2020-12-10 19:48:42,224 Calling Account Api......for account id 5
+2020-12-10 19:48:50,621 Evaluating Min Balance for 5
+2020-12-12 11:41:35,148 Application started. Press Ctrl+C to shut down.
+2020-12-12 11:41:35,189 Hosting environment: Development
+2020-12-12 11:41:35,192 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-12 11:44:38,586 Calling Account Api......for account id 1
+2020-12-12 11:44:40,825 Account Api called
+2020-12-12 11:44:40,826 Deposit initiated for Account Id1
+2020-12-12 11:45:22,806 Deposit Completed successfully for Account Id1
+2020-12-12 12:18:31,780 Application started. Press Ctrl+C to shut down.
+2020-12-12 12:18:31,831 Hosting environment: Development
+2020-12-12 12:18:31,837 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-12 12:20:35,300 Calling Account Api......for account id 1
+2020-12-12 12:20:35,938 Account Api called
+2020-12-12 12:20:35,938 Deposit initiated for Account Id1
+2020-12-12 12:20:50,895 Deposit Completed successfully for Account Id1
+2020-12-12 13:18:51,337 Application started. Press Ctrl+C to shut down.
+2020-12-12 13:18:51,353 Hosting environment: Development
+2020-12-12 13:18:51,355 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-12 13:19:17,626 Transaction history initiated for Customer Id: 1
+2020-12-12 13:19:17,626 Transaction history initiated for Customer Id: 1
+2020-12-12 13:19:17,627 Transaction history request complted for Customer Id: 1
+2020-12-12 13:19:17,627 Transaction history request complted for Customer Id: 1
+2020-12-12 13:22:32,874 Calling Account Api......for account id 2
+2020-12-12 13:22:33,304 Account Api called
+2020-12-12 13:22:33,304 Deposit initiated for Account Id2
+2020-12-12 13:22:40,059 Deposit Completed successfully for Account Id2
+2020-12-12 13:22:46,576 Calling Account Api......for account id 2
+2020-12-12 13:22:46,593 Account Api called
+2020-12-12 13:22:46,593 Deposit initiated for Account Id2
+2020-12-12 13:22:46,602 Deposit Completed successfully for Account Id2
+2020-12-12 13:22:53,592 Transaction history initiated for Customer Id: 1
+2020-12-12 13:22:53,592 Transaction history request complted for Customer Id: 1
+2020-12-12 13:26:53,471 Calling Account Api......for account id 2
+2020-12-12 13:26:53,581 Evaluating Min Balance for 2
+2020-12-12 13:27:17,429 Calling Account Api......for account id 2
+2020-12-12 13:27:17,447 Evaluating Min Balance for 2
+2020-12-12 13:27:22,144 Transaction history initiated for Customer Id: 1
+2020-12-12 13:27:22,144 Transaction history request complted for Customer Id: 1
+2020-12-12 13:28:25,518 Transfer  from Account Id: 2to Account Id1 Completed Successfully
+2020-12-12 13:30:14,258 Application started. Press Ctrl+C to shut down.
+2020-12-12 13:30:14,277 Hosting environment: Development
+2020-12-12 13:30:14,280 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-12 13:31:16,179 Calling Account Api......for account id 1
+2020-12-12 13:31:16,525 Account Api called
+2020-12-12 13:31:16,525 Deposit initiated for Account Id1
+2020-12-12 13:31:16,557 Deposit Completed successfully for Account Id1
+2020-12-12 13:31:23,036 Calling Account Api......for account id 1
+2020-12-12 13:31:23,053 Account Api called
+2020-12-12 13:31:23,053 Deposit initiated for Account Id1
+2020-12-12 13:31:23,070 Deposit Completed successfully for Account Id1
+2020-12-12 13:31:28,371 Transaction history initiated for Customer Id: 1
+2020-12-12 13:31:28,372 Transaction history request complted for Customer Id: 1
+2020-12-12 13:31:50,299 Transfer  from Account Id: 1to Account Id2 Completed Successfully
+2020-12-12 13:32:29,394 Calling Account Api......for account id 2
+2020-12-12 13:32:29,419 Evaluating Min Balance for 2
+2020-12-14 12:27:23,734 Application started. Press Ctrl+C to shut down.
+2020-12-14 12:27:23,749 Hosting environment: Development
+2020-12-14 12:27:23,751 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-14 12:29:53,748 Transaction history initiated for Customer Id: 1
+2020-12-14 12:29:53,749 Transaction history request complted for Customer Id: 1
+2020-12-14 12:31:06,122 Calling Account Api......for account id 1
+2020-12-14 12:31:06,662 Account Api called
+2020-12-14 12:31:06,663 Deposit initiated for Account Id1
+2020-12-14 12:31:06,965 Deposit Completed successfully for Account Id1
+2020-12-14 12:34:03,437 Calling Account Api......for account id 1
+2020-12-14 12:34:04,161 Evaluating Min Balance for 1
+2020-12-14 12:35:53,040 Transfer  from Account Id: 1to Account Id2 Completed Successfully
+2020-12-14 14:29:22,587 Application started. Press Ctrl+C to shut down.
+2020-12-14 14:29:22,595 Hosting environment: Development
+2020-12-14 14:29:22,597 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-14 15:47:17,358 Application started. Press Ctrl+C to shut down.
+2020-12-14 15:47:17,535 Hosting environment: Development
+2020-12-14 15:47:17,538 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-14 15:56:07,462 Calling Account Api......for account id 1
+2020-12-14 15:56:08,315 Account Api called
+2020-12-14 15:56:08,316 Deposit initiated for Account Id1
+2020-12-14 15:56:42,018 Deposit Completed successfully for Account Id1
+2020-12-14 15:57:13,823 Calling Account Api......for account id 1
+2020-12-14 15:57:13,898 Evaluating Min Balance for 1
+2020-12-14 15:57:40,957 Transfer  from Account Id: 1to Account Id2 Completed Successfully
+2020-12-14 15:57:54,362 Transaction history initiated for Customer Id: 1
+2020-12-14 15:57:54,363 Transaction history request complted for Customer Id: 1
+2020-12-14 16:34:30,330 Application started. Press Ctrl+C to shut down.
+2020-12-14 16:34:30,349 Hosting environment: Development
+2020-12-14 16:34:30,351 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-14 16:37:30,949 Calling Account Api......for account id 1
+2020-12-14 16:37:31,525 Account Api called
+2020-12-14 16:37:31,525 Deposit initiated for Account Id1
+2020-12-14 16:37:32,053 Deposit Completed successfully for Account Id1
+2020-12-14 16:37:54,232 Calling Account Api......for account id 1
+2020-12-14 16:37:54,275 Evaluating Min Balance for 1
+2020-12-14 16:38:12,820 Transaction history initiated for Customer Id: 1
+2020-12-14 16:38:12,822 Transaction history request complted for Customer Id: 1
+2020-12-14 16:39:15,721 Transfer  from Account Id: 1to Account Id2 Completed Successfully
+2020-12-15 10:41:24,640 Application started. Press Ctrl+C to shut down.
+2020-12-15 10:41:24,649 Hosting environment: Development
+2020-12-15 10:41:24,650 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-15 12:01:23,058 Application started. Press Ctrl+C to shut down.
+2020-12-15 12:01:23,093 Hosting environment: Development
+2020-12-15 12:01:23,104 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-15 12:36:31,699 Application started. Press Ctrl+C to shut down.
+2020-12-15 12:36:31,745 Hosting environment: Development
+2020-12-15 12:36:31,748 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-15 12:43:28,278 Calling Account Api......for account id 1
+2020-12-15 12:43:29,592 Account Api called
+2020-12-15 12:43:29,593 Deposit initiated for Account Id1
+2020-12-15 12:43:30,027 Deposit Completed successfully for Account Id1
+2020-12-15 12:43:49,344 Calling Account Api......for account id 1
+2020-12-15 12:43:49,395 Evaluating Min Balance for 1
+2020-12-15 12:44:05,946 Transfer  from Account Id: 1to Account Id2 Completed Successfully
+2020-12-15 12:44:17,289 Transaction history initiated for Customer Id: 1
+2020-12-15 12:44:17,290 Transaction history request complted for Customer Id: 1
+2020-12-15 12:44:37,154 Transaction history initiated for Customer Id: 1
+2020-12-15 12:44:37,155 Transaction history request complted for Customer Id: 1
+2020-12-15 12:45:19,113 Transaction history initiated for Customer Id: 1
+2020-12-15 12:45:19,114 Transaction history request complted for Customer Id: 1
+2020-12-16 15:22:55,940 Application started. Press Ctrl+C to shut down.
+2020-12-16 15:22:56,057 Hosting environment: Development
+2020-12-16 15:22:56,061 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-16 15:41:40,477 Application started. Press Ctrl+C to shut down.
+2020-12-16 15:41:40,500 Hosting environment: Development
+2020-12-16 15:41:40,505 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-16 15:45:46,251 Calling Account Api......for account id 1
+2020-12-16 15:45:47,313 Account Api called
+2020-12-16 15:45:47,313 Deposit initiated for Account Id1
+2020-12-16 15:45:47,594 Deposit Completed successfully for Account Id1
+2020-12-16 15:46:04,593 Account Id0 or Amount1 is Invalid
+2020-12-16 15:46:19,283 Account Id0 or Amount1 is Invalid
+2020-12-16 15:47:22,991 Account Id0 or Amount1 is Invalid
+2020-12-16 15:47:41,656 Account Id0 or Amount1 is Invalid
+2020-12-16 15:47:50,076 Account Id0 or Amount1 is Invalid
+2020-12-16 15:48:01,850 Account Id0 or Amount200 is Invalid
+2020-12-16 15:48:09,839 Transaction history initiated for Customer Id: 1
+2020-12-16 15:48:09,840 Transaction history request complted for Customer Id: 1
+2020-12-16 15:48:32,277 invalid parameters
+2020-12-16 15:48:36,179 invalid parameters
+2020-12-16 15:48:52,412 invalid parameters
+2020-12-16 15:52:15,481 Account Id0 or Amount1 is Invalid
+2020-12-16 15:52:20,277 Account Id0 or Amount1 is Invalid
+2020-12-16 16:01:44,650 Calling Account Api......for account id 1
+2020-12-16 16:01:44,809 Evaluating Min Balance for 1
+2020-12-16 16:25:04,690 Application started. Press Ctrl+C to shut down.
+2020-12-16 16:25:04,718 Hosting environment: Development
+2020-12-16 16:25:04,720 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-16 16:37:58,607 Application started. Press Ctrl+C to shut down.
+2020-12-16 16:37:58,626 Hosting environment: Development
+2020-12-16 16:37:58,629 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-16 16:41:10,841 Calling Account Api......for account id 1
+2020-12-16 16:41:11,255 Account Api called
+2020-12-16 16:41:11,255 Deposit initiated for Account Id1
+2020-12-16 16:41:11,653 Deposit Completed successfully for Account Id1
+2020-12-16 16:41:25,849 Calling Account Api......for account id 1
+2020-12-16 16:41:25,913 Evaluating Min Balance for 1
+2020-12-16 16:41:52,739 Calling Account Api......for account id 2
+2020-12-16 16:41:52,766 Evaluating Min Balance for 2
+2020-12-16 16:44:23,580 Transfer  from Account Id: 1to Account Id2 Completed Successfully
+2020-12-16 16:44:52,767 Calling Account Api......for account id 2
+2020-12-16 16:44:52,801 Evaluating Min Balance for 2
+2020-12-16 16:45:06,478 Transaction history initiated for Customer Id: 1
+2020-12-16 16:45:06,480 Transaction history request complted for Customer Id: 1
+2020-12-16 16:49:51,576 Transaction history initiated for Customer Id: 1
+2020-12-16 16:49:51,577 Transaction history request complted for Customer Id: 1
+2020-12-17 15:40:48,700 Application started. Press Ctrl+C to shut down.
+2020-12-17 15:40:48,724 Hosting environment: Development
+2020-12-17 15:40:48,727 Content root path: E:\RetailBankingSystem\TransactionService
+2020-12-17 15:42:20,664 Calling Account Api......for account id 1
+2020-12-17 15:42:26,813 Account Api called
+2020-12-17 15:42:26,813 Deposit initiated for Account Id1
+2020-12-17 15:42:27,389 Deposit Completed successfully for Account Id1
+2020-12-17 15:42:46,831 Transaction history initiated for Customer Id: 1
+2020-12-17 15:42:46,833 Transaction history request complted for Customer Id: 1
+2020-12-17 15:43:02,370 Calling Account Api......for account id 1
+2020-12-17 15:43:02,484 Evaluating Min Balance for 1
+2020-12-17 15:43:18,446 Transfer  from Account Id: 1to Account Id2 Completed Successfully
+2020-12-17 15:43:27,839 Transaction history initiated for Customer Id: 1
+2020-12-17 15:43:27,839 Transaction history request complted for Customer Id: 1

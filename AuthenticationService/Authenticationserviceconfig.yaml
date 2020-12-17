@@ -1,0 +1,33 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: authenticationserviceconfig-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: Authenticationserviceconfig
+  template:
+    metadata:
+      labels:
+        app: Authenticationserviceconfig
+    spec:
+      containers:
+      - name: authrepos
+        image: retailbankingsystempod1.azurecr.io/authrepos:latest
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: authconfig
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: authenticationserviceconfig
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: Authenticationserviceconfig

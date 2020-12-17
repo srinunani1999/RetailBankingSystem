@@ -1,0 +1,58 @@
+﻿@model IEnumerable<RetailBankSystemClient.ViewModels.TransactionHistoryViewModel>
+
+@{
+    ViewData["Title"] = "TransactionHistory";
+}
+
+<h1>Transaction History</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AccountId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.message)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.source_balance)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.destination_balance)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateOfTransaction)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AccountId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.message)
+            </td>
+            <td>
+                <span>Rs.</span> @Html.DisplayFor(modelItem => item.source_balance)
+            </td>
+            <td>
+                <span>Rs.</span>  @Html.DisplayFor(modelItem => item.destination_balance)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfTransaction)
+            </td>
+           
+        </tr>
+}
+    </tbody>
+</table>

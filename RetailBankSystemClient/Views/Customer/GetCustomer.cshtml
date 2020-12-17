@@ -1,0 +1,55 @@
+﻿@model IEnumerable<RetailBankSystemClient.ViewModels.CustomerViewModel>
+
+@{
+    ViewData["Title"] = "GetCustomer";
+}
+
+<h1>GetCustomer</h1>
+
+<p>
+    <a asp-action="createCustomer">Create New Customer</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateOfBirth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PANno)
+            </th>
+            <th>
+                Actions
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfBirth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PANno)
+            </td>
+            <td>
+                
+                <a asp-action="GetCustomerDetails" asp-controller="Customer" asp-route-id="@item.CustomerId">Details</a> 
+               
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

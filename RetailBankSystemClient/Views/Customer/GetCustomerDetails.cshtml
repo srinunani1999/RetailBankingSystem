@@ -1,0 +1,42 @@
+﻿@model RetailBankSystemClient.ViewModels.CustomerViewModel
+
+@{
+    ViewData["Title"] = "GetCustomerDetails";
+}
+
+<h1>Details of @Model.CustomerId</h1>
+
+<div>
+    <h4>CustomerViewModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DateOfBirth)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PANno)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PANno)
+        </dd>
+    </dl>
+</div>
+<div>
+   
+    <a asp-action="GetCustomer">Back to Customers List</a>
+</div>

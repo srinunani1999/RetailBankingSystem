@@ -1,0 +1,33 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rulesserviceconfig-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: Rulesserviceconfig
+  template:
+    metadata:
+      labels:
+        app: Rulesserviceconfig
+    spec:
+      containers:
+      - name: rulesrepos
+        image: retailbankingsystempod1.azurecr.io/rulesrepos:latest
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: rulesconfig
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rulesserviceconfig
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: Rulesserviceconfig

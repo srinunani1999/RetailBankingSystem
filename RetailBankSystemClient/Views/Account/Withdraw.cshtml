@@ -1,0 +1,80 @@
+﻿@model RetailBankSystemClient.ViewModels.WithdrawViewModel
+
+@{
+    ViewData["Title"] = "Withdraw";
+}
+@{
+    var id= Model.AccountId;
+
+}
+@*<script>
+    $(document).ready(function () {
+
+
+        $("#submit").on("click", function () {
+
+            
+
+            $('#aid').val(this.id);
+
+            
+        });
+
+
+    });
+
+</script>*@
+
+<h1>Withdraw</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Withdraw">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="AccountId" class="control-label">Account Id-<b>  @id</b></label>
+                <input asp-for="AccountId" id="aid" class="form-control" value=@id hidden />
+                <span asp-validation-for="AccountId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="amount" class="control-label"></label>
+                <input asp-for="amount" class="form-control" placeholder="Enter Amount in Rs." />
+                <span asp-validation-for="amount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" id="submit" value="Withdraw" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+    <div class="col-md-8 d-flex flex-column justify-content-center">
+        <div class="rounded d-flex flex-column justify-content-center">
+            <img class="rounded overflow-hidden" src="~/Images/withdraw.jpg" height="250" />
+
+
+        </div>
+        <div class="rounded  bg-light">
+            <p>
+                Internet Banking offers you the ease and convenience of transacting in an environment you feel most comfortable with. You can check balances and transactions, transfer funds, withdrawl, deposits and much more, anywhere.
+            </p>
+
+        </div>
+
+
+    </div>
+</div>
+@*<script>
+    $(document).ready(function () {
+
+      
+        $("#submit").on("click", function () {
+
+        
+            $("#aid").removeAttr("disabled");
+        });
+
+
+    });
+
+</script>*@
+
+

@@ -1,0 +1,117 @@
+﻿@using Microsoft.AspNetCore.Http;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Retail Bank System</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" />
+
+</head>
+
+@{
+
+    string username = Context.Session.GetString("Username");
+
+}
+<body>
+    <header>
+
+
+
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" id="brandname">RetailBankingSystem</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                @*//d-sm-inline-flex flex-sm-row-reverse*@
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse justify-content-between ">
+                    @*flex-grow-1*@
+                    <ul class="navbar-nav">
+                        @if (Context.Session.GetString("token") == null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark   " asp-area="" asp-controller="Login" asp-action="Login"><span class="material-icons align-bottom">login</span>Login</a>
+                            </li>
+
+
+                        }
+                        else
+                        {
+                            <li class="nav-item ">
+                                <a class="nav-link"  id="brandname" asp-area="" asp-controller="Home" asp-action="Index">Hello <b> @username</b></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Logout"><span class="material-icons align-bottom">logout</span>Logout</a>
+                            </li>
+                        }
+                    </ul>
+
+
+                    <ul class="navbar-nav flex-grow-1 ">
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><span class="material-icons align-bottom"> home</span>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy"><span class="material-icons align-bottom">info</span>About Us</a>
+                        </li>
+
+
+
+                        @*@if (Context.Session.GetString("token") == null)
+                            {
+                                <li class="nav-item float-right">
+                                    <a class="nav-link text-dark   " asp-area="" asp-controller="Login" asp-action="Login"><span class="material-icons align-bottom">login</span>Login</a>
+                                </li>
+
+
+                            }
+                            else
+                            {
+                                <li class="nav-item ">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Logout"><span class="material-icons align-bottom">logout</span>Logout</a>
+                                </li>
+                            }*@
+
+
+                    </ul>
+
+
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container ">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer bg-light ">
+        <div class="container" id="brandname">
+            &copy; 2020 - RetailBankSystem  <a asp-area="" asp-controller="Home" asp-action="Privacy"></a>
+        </div>
+    </footer>
+    @*<script>
+            AOS.init();
+        </script>
+        <script src="https ://unpkg.com/aos@2.3.1/dist/aos.js"></script>*@
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,1258 @@
+2020-12-12 13:15:54,590 Application started. Press Ctrl+C to shut down.
+2020-12-12 13:15:54,602 Hosting environment: Development
+2020-12-12 13:15:54,604 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 13:26:19,548 An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Connections.ConnectionResetException: The client has disconnected
+ ---> System.Runtime.InteropServices.COMException (0x800704CD): An operation was attempted on a nonexistent network connection. (0x800704CD)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.IIS.Core.IO.AsyncIOOperation.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ReadBody()
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.ReadAsync(CancellationToken token)
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.ReadAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ReadAsync(Memory`1 memory, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.IIS.Core.HttpRequestStream.ReadAsyncInternal(Memory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.Pipelines.StreamPipeReader.ReadAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.FormPipeReader.ReadFormAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Features.FormFeature.InnerReadFormAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.FormValueProviderFactory.AddValueProviderAsync(ValueProviderFactoryContext context)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.CompositeValueProvider.CreateAsync(ActionContext actionContext, IList`1 factories)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.CompositeValueProvider.TryCreateAsync(ActionContext actionContext, IList`1 factories)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-12 13:42:06,681 Application started. Press Ctrl+C to shut down.
+2020-12-12 13:42:06,690 Hosting environment: Development
+2020-12-12 13:42:06,692 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 13:54:33,496 Exceptions occured due to :No connection could be made because the target machine actively refused it.
+2020-12-12 13:55:13,867 An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: U. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at RetailBankSystemClient.Controllers.LoginController.Login(User user) in E:\RetailBankingSystem\RetailBankSystemClient\Controllers\LoginController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-12 13:57:30,840 Application started. Press Ctrl+C to shut down.
+2020-12-12 13:57:30,850 Hosting environment: Development
+2020-12-12 13:57:30,852 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 13:59:00,688 Application started. Press Ctrl+C to shut down.
+2020-12-12 13:59:00,702 Hosting environment: Development
+2020-12-12 13:59:00,704 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 14:01:05,648 Application started. Press Ctrl+C to shut down.
+2020-12-12 14:01:05,659 Hosting environment: Development
+2020-12-12 14:01:05,661 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 14:02:16,080 Application started. Press Ctrl+C to shut down.
+2020-12-12 14:02:16,098 Hosting environment: Development
+2020-12-12 14:02:16,100 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 14:06:22,723 Application started. Press Ctrl+C to shut down.
+2020-12-12 14:06:22,734 Hosting environment: Development
+2020-12-12 14:06:22,735 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 15:34:27,959 Application started. Press Ctrl+C to shut down.
+2020-12-12 15:34:27,969 Hosting environment: Development
+2020-12-12 15:34:27,971 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 15:38:41,325 Application started. Press Ctrl+C to shut down.
+2020-12-12 15:38:41,334 Hosting environment: Development
+2020-12-12 15:38:41,335 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 15:43:48,465 Application started. Press Ctrl+C to shut down.
+2020-12-12 15:43:48,474 Hosting environment: Development
+2020-12-12 15:43:48,476 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 15:44:45,453 Application started. Press Ctrl+C to shut down.
+2020-12-12 15:44:45,462 Hosting environment: Development
+2020-12-12 15:44:45,464 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 15:46:25,328 Application started. Press Ctrl+C to shut down.
+2020-12-12 15:46:25,338 Hosting environment: Development
+2020-12-12 15:46:25,340 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 15:49:06,150 Application started. Press Ctrl+C to shut down.
+2020-12-12 15:49:06,163 Hosting environment: Development
+2020-12-12 15:49:06,166 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 15:49:34,049 Application started. Press Ctrl+C to shut down.
+2020-12-12 15:49:34,058 Hosting environment: Development
+2020-12-12 15:49:34,060 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 15:51:29,280 Application started. Press Ctrl+C to shut down.
+2020-12-12 15:51:29,292 Hosting environment: Development
+2020-12-12 15:51:29,295 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 15:53:53,141 Application started. Press Ctrl+C to shut down.
+2020-12-12 15:53:53,150 Hosting environment: Development
+2020-12-12 15:53:53,152 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 15:54:25,179 Application started. Press Ctrl+C to shut down.
+2020-12-12 15:54:25,190 Hosting environment: Development
+2020-12-12 15:54:25,191 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 15:55:35,157 Application started. Press Ctrl+C to shut down.
+2020-12-12 15:55:35,166 Hosting environment: Development
+2020-12-12 15:55:35,168 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 15:56:03,660 Exceptions occured due to No connection could be made because the target machine actively refused it.
+2020-12-12 16:05:01,760 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:05:01,769 Hosting environment: Development
+2020-12-12 16:05:01,771 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:10:27,105 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:10:27,115 Hosting environment: Development
+2020-12-12 16:10:27,117 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:13:22,838 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:13:22,847 Hosting environment: Development
+2020-12-12 16:13:22,848 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:13:43,866 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:13:43,876 Hosting environment: Development
+2020-12-12 16:13:43,877 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:14:25,518 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:14:25,530 Hosting environment: Development
+2020-12-12 16:14:25,532 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:14:59,098 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:14:59,107 Hosting environment: Development
+2020-12-12 16:14:59,109 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:15:34,464 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:15:34,475 Hosting environment: Development
+2020-12-12 16:15:34,476 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:16:31,285 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:16:31,294 Hosting environment: Development
+2020-12-12 16:16:31,296 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:17:40,840 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:17:40,849 Hosting environment: Development
+2020-12-12 16:17:40,851 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:18:06,656 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:18:06,667 Hosting environment: Development
+2020-12-12 16:18:06,669 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:18:38,867 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:18:38,878 Hosting environment: Development
+2020-12-12 16:18:38,879 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:19:57,302 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:19:57,312 Hosting environment: Development
+2020-12-12 16:19:57,314 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:20:32,851 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:20:32,859 Hosting environment: Development
+2020-12-12 16:20:32,861 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:21:23,210 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:21:23,220 Hosting environment: Development
+2020-12-12 16:21:23,221 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:21:43,563 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:21:43,572 Hosting environment: Development
+2020-12-12 16:21:43,574 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:21:58,220 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:21:58,229 Hosting environment: Development
+2020-12-12 16:21:58,231 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:22:36,830 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:22:36,840 Hosting environment: Development
+2020-12-12 16:22:36,842 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:23:57,860 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:23:57,869 Hosting environment: Development
+2020-12-12 16:23:57,871 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:26:56,752 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:26:56,762 Hosting environment: Development
+2020-12-12 16:26:56,764 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:28:04,650 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:28:04,659 Hosting environment: Development
+2020-12-12 16:28:04,661 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:29:08,983 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:29:08,993 Hosting environment: Development
+2020-12-12 16:29:08,995 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:30:02,084 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:30:02,096 Hosting environment: Development
+2020-12-12 16:30:02,098 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:35:27,666 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:35:27,677 Hosting environment: Development
+2020-12-12 16:35:27,679 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:36:11,261 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:36:11,270 Hosting environment: Development
+2020-12-12 16:36:11,271 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:37:27,664 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:37:27,672 Hosting environment: Development
+2020-12-12 16:37:27,674 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:38:51,465 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:38:51,475 Hosting environment: Development
+2020-12-12 16:38:51,476 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:45:23,641 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:45:23,651 Hosting environment: Development
+2020-12-12 16:45:23,653 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:46:46,821 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:46:46,834 Hosting environment: Development
+2020-12-12 16:46:46,835 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:47:50,562 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:47:50,571 Hosting environment: Development
+2020-12-12 16:47:50,573 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:49:08,830 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:49:08,841 Hosting environment: Development
+2020-12-12 16:49:08,843 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 16:50:25,753 Application started. Press Ctrl+C to shut down.
+2020-12-12 16:50:25,763 Hosting environment: Development
+2020-12-12 16:50:25,764 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 19:39:23,189 Application started. Press Ctrl+C to shut down.
+2020-12-12 19:39:23,205 Hosting environment: Development
+2020-12-12 19:39:23,207 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 19:43:01,958 Application started. Press Ctrl+C to shut down.
+2020-12-12 19:43:01,993 Hosting environment: Development
+2020-12-12 19:43:01,995 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 19:44:06,095 Application started. Press Ctrl+C to shut down.
+2020-12-12 19:44:06,110 Hosting environment: Development
+2020-12-12 19:44:06,113 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 19:45:06,426 Application started. Press Ctrl+C to shut down.
+2020-12-12 19:45:06,445 Hosting environment: Development
+2020-12-12 19:45:06,447 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 19:46:41,329 Application started. Press Ctrl+C to shut down.
+2020-12-12 19:46:41,340 Hosting environment: Development
+2020-12-12 19:46:41,342 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 19:48:22,802 Application started. Press Ctrl+C to shut down.
+2020-12-12 19:48:22,811 Hosting environment: Development
+2020-12-12 19:48:22,813 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 19:49:09,594 Application started. Press Ctrl+C to shut down.
+2020-12-12 19:49:09,605 Hosting environment: Development
+2020-12-12 19:49:09,606 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 19:49:38,339 Application started. Press Ctrl+C to shut down.
+2020-12-12 19:49:38,349 Hosting environment: Development
+2020-12-12 19:49:38,351 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 19:51:39,968 Application started. Press Ctrl+C to shut down.
+2020-12-12 19:51:39,981 Hosting environment: Development
+2020-12-12 19:51:39,983 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 19:52:05,108 Application started. Press Ctrl+C to shut down.
+2020-12-12 19:52:05,117 Hosting environment: Development
+2020-12-12 19:52:05,119 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 19:55:56,186 Application started. Press Ctrl+C to shut down.
+2020-12-12 19:55:56,202 Hosting environment: Development
+2020-12-12 19:55:56,205 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 19:57:00,370 Application started. Press Ctrl+C to shut down.
+2020-12-12 19:57:00,380 Hosting environment: Development
+2020-12-12 19:57:00,382 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 19:57:34,145 Application started. Press Ctrl+C to shut down.
+2020-12-12 19:57:34,156 Hosting environment: Development
+2020-12-12 19:57:34,158 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 19:58:01,421 Application started. Press Ctrl+C to shut down.
+2020-12-12 19:58:01,432 Hosting environment: Development
+2020-12-12 19:58:01,434 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 19:58:37,794 Application started. Press Ctrl+C to shut down.
+2020-12-12 19:58:37,804 Hosting environment: Development
+2020-12-12 19:58:37,806 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 19:58:55,314 Application started. Press Ctrl+C to shut down.
+2020-12-12 19:58:55,324 Hosting environment: Development
+2020-12-12 19:58:55,325 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 19:59:32,423 Application started. Press Ctrl+C to shut down.
+2020-12-12 19:59:32,434 Hosting environment: Development
+2020-12-12 19:59:32,435 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 19:59:58,830 Application started. Press Ctrl+C to shut down.
+2020-12-12 19:59:58,840 Hosting environment: Development
+2020-12-12 19:59:58,842 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:00:29,807 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:00:29,828 Hosting environment: Development
+2020-12-12 20:00:29,831 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:01:09,289 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:01:09,298 Hosting environment: Development
+2020-12-12 20:01:09,301 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:01:45,960 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:01:45,970 Hosting environment: Development
+2020-12-12 20:01:45,972 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:02:24,620 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:02:24,629 Hosting environment: Development
+2020-12-12 20:02:24,631 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:02:52,269 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:02:52,279 Hosting environment: Development
+2020-12-12 20:02:52,281 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:03:20,977 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:03:20,991 Hosting environment: Development
+2020-12-12 20:03:20,993 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:04:12,228 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:04:12,238 Hosting environment: Development
+2020-12-12 20:04:12,240 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:04:49,932 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:04:49,943 Hosting environment: Development
+2020-12-12 20:04:49,945 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:05:14,702 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:05:14,714 Hosting environment: Development
+2020-12-12 20:05:14,716 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:06:03,318 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:06:03,328 Hosting environment: Development
+2020-12-12 20:06:03,329 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:07:41,164 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:07:41,174 Hosting environment: Development
+2020-12-12 20:07:41,175 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:07:57,014 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:07:57,024 Hosting environment: Development
+2020-12-12 20:07:57,025 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:08:36,634 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:08:36,643 Hosting environment: Development
+2020-12-12 20:08:36,645 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:09:00,994 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:09:01,005 Hosting environment: Development
+2020-12-12 20:09:01,007 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:10:27,620 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:10:27,630 Hosting environment: Development
+2020-12-12 20:10:27,632 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:12:09,318 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:12:09,333 Hosting environment: Development
+2020-12-12 20:12:09,335 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:12:57,743 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:12:57,752 Hosting environment: Development
+2020-12-12 20:12:57,753 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:13:39,868 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:13:39,885 Hosting environment: Development
+2020-12-12 20:13:39,887 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:16:50,685 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:16:50,695 Hosting environment: Development
+2020-12-12 20:16:50,697 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:17:26,840 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:17:26,851 Hosting environment: Development
+2020-12-12 20:17:26,853 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:18:57,439 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:18:57,448 Hosting environment: Development
+2020-12-12 20:18:57,449 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:21:42,954 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:21:42,972 Hosting environment: Development
+2020-12-12 20:21:42,975 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:21:54,847 User Login
+2020-12-12 20:21:58,710 User Log Out
+2020-12-12 20:22:31,537 User Login
+2020-12-12 20:22:38,601 User Log Out
+2020-12-12 20:25:51,840 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:25:51,850 Hosting environment: Development
+2020-12-12 20:25:51,851 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:27:16,390 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:27:16,402 Hosting environment: Development
+2020-12-12 20:27:16,404 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:27:52,948 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:27:52,957 Hosting environment: Development
+2020-12-12 20:27:52,958 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:29:07,363 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:29:07,374 Hosting environment: Development
+2020-12-12 20:29:07,375 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:29:44,012 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:29:44,024 Hosting environment: Development
+2020-12-12 20:29:44,028 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-12 20:29:55,566 User Login
+2020-12-12 20:30:10,145 Exceptions Occured due to  No connection could be made because the target machine actively refused it.
+2020-12-12 20:30:12,119 Exceptions Occured due to  No connection could be made because the target machine actively refused it.
+2020-12-12 20:30:13,631 Exceptions occured due to No connection could be made because the target machine actively refused it.
+2020-12-12 20:30:21,997 Exceptions Occured due to No connection could be made because the target machine actively refused it.
+2020-12-12 20:30:35,213 Exceptions occured due to :No connection could be made because the target machine actively refused it.
+2020-12-12 20:30:43,422 User Log Out
+2020-12-12 20:30:55,082 Exceptions occured due to No connection could be made because the target machine actively refused it.
+2020-12-12 20:30:56,908 Exceptions occured due to No connection could be made because the target machine actively refused it.
+2020-12-12 20:31:40,586 Application started. Press Ctrl+C to shut down.
+2020-12-12 20:31:40,599 Hosting environment: Development
+2020-12-12 20:31:40,600 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-14 15:49:13,918 Application started. Press Ctrl+C to shut down.
+2020-12-14 15:49:13,935 Hosting environment: Development
+2020-12-14 15:49:13,939 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-14 15:51:33,305 User Login
+2020-12-14 16:02:40,186 Application started. Press Ctrl+C to shut down.
+2020-12-14 16:02:40,248 Hosting environment: Development
+2020-12-14 16:02:40,249 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-14 16:02:54,455 User Login
+2020-12-14 16:03:35,737 Exception occured due to  The entity type 'TransferViewModel' requires a primary key to be defined. If you intended to use a keyless entity type call 'HasNoKey()'.
+2020-12-15 12:33:03,871 Application started. Press Ctrl+C to shut down.
+2020-12-15 12:33:03,893 Hosting environment: Development
+2020-12-15 12:33:03,896 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-15 12:33:44,674 User Login
+2020-12-15 12:34:18,390 Exception occured due to  The entity type 'TransferViewModel' requires a primary key to be defined. If you intended to use a keyless entity type call 'HasNoKey()'.
+2020-12-15 12:41:14,032 User Log Out
+2020-12-15 12:41:32,198 User Login
+2020-12-15 12:42:58,756 Exception occured due to  The entity type 'TransferViewModel' requires a primary key to be defined. If you intended to use a keyless entity type call 'HasNoKey()'.
+2020-12-15 12:44:58,283 User Log Out
+2020-12-15 12:45:15,575 User Login
+2020-12-15 12:45:25,544 User Log Out
+2020-12-15 12:45:34,366 User Login
+2020-12-15 12:46:52,110 User Log Out
+2020-12-15 14:23:42,786 Application started. Press Ctrl+C to shut down.
+2020-12-15 14:23:42,796 Hosting environment: Development
+2020-12-15 14:23:42,798 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-15 14:25:04,802 Application started. Press Ctrl+C to shut down.
+2020-12-15 14:25:04,812 Hosting environment: Development
+2020-12-15 14:25:04,814 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-15 14:25:47,617 Application started. Press Ctrl+C to shut down.
+2020-12-15 14:25:47,631 Hosting environment: Development
+2020-12-15 14:25:47,633 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-15 15:03:38,058 Application started. Press Ctrl+C to shut down.
+2020-12-15 15:03:38,068 Hosting environment: Development
+2020-12-15 15:03:38,070 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-15 15:03:48,900 User Login
+2020-12-15 15:04:33,549 Exception occured due to  The entity type 'TransferViewModel' requires a primary key to be defined. If you intended to use a keyless entity type call 'HasNoKey()'.
+2020-12-15 15:51:25,362 Application started. Press Ctrl+C to shut down.
+2020-12-15 15:51:25,372 Hosting environment: Development
+2020-12-15 15:51:25,374 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-15 15:51:48,029 User Login
+2020-12-15 15:53:28,300 User Log Out
+2020-12-15 18:59:02,757 Application started. Press Ctrl+C to shut down.
+2020-12-15 18:59:02,800 Hosting environment: Development
+2020-12-15 18:59:02,806 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-15 19:00:08,062 Application started. Press Ctrl+C to shut down.
+2020-12-15 19:00:08,087 Hosting environment: Development
+2020-12-15 19:00:08,091 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-15 19:05:26,538 Application started. Press Ctrl+C to shut down.
+2020-12-15 19:05:26,549 Hosting environment: Development
+2020-12-15 19:05:26,551 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-15 19:06:14,014 Application started. Press Ctrl+C to shut down.
+2020-12-15 19:06:14,054 Hosting environment: Development
+2020-12-15 19:06:14,058 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-15 19:06:54,148 Application started. Press Ctrl+C to shut down.
+2020-12-15 19:06:54,176 Hosting environment: Development
+2020-12-15 19:06:54,180 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-15 19:07:27,569 Application started. Press Ctrl+C to shut down.
+2020-12-15 19:07:27,582 Hosting environment: Development
+2020-12-15 19:07:27,584 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-15 19:08:42,855 Application started. Press Ctrl+C to shut down.
+2020-12-15 19:08:42,888 Hosting environment: Development
+2020-12-15 19:08:42,893 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-15 19:10:06,989 Application started. Press Ctrl+C to shut down.
+2020-12-15 19:10:07,011 Hosting environment: Development
+2020-12-15 19:10:07,015 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-15 19:10:49,002 Application started. Press Ctrl+C to shut down.
+2020-12-15 19:10:49,014 Hosting environment: Development
+2020-12-15 19:10:49,016 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-15 19:11:48,909 Application started. Press Ctrl+C to shut down.
+2020-12-15 19:11:48,921 Hosting environment: Development
+2020-12-15 19:11:48,923 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-15 19:12:42,220 Application started. Press Ctrl+C to shut down.
+2020-12-15 19:12:42,230 Hosting environment: Development
+2020-12-15 19:12:42,232 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-15 19:18:27,146 Application started. Press Ctrl+C to shut down.
+2020-12-15 19:18:27,176 Hosting environment: Development
+2020-12-15 19:18:27,180 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-15 19:18:59,504 Application started. Press Ctrl+C to shut down.
+2020-12-15 19:18:59,515 Hosting environment: Development
+2020-12-15 19:18:59,517 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 11:39:41,458 Application started. Press Ctrl+C to shut down.
+2020-12-16 11:39:41,474 Hosting environment: Development
+2020-12-16 11:39:41,476 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 12:37:29,906 Application started. Press Ctrl+C to shut down.
+2020-12-16 12:37:29,922 Hosting environment: Development
+2020-12-16 12:37:29,925 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 12:38:50,427 User Login
+2020-12-16 12:39:12,706 An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at RetailBankSystemClient.Controllers.LoginController.Login(User user) in E:\RetailBankingSystem\RetailBankSystemClient\Controllers\LoginController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-16 12:39:23,045 User Login
+2020-12-16 12:39:52,389 Application started. Press Ctrl+C to shut down.
+2020-12-16 12:39:52,410 Hosting environment: Development
+2020-12-16 12:39:52,413 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 12:40:06,908 User Login
+2020-12-16 12:40:28,516 An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at RetailBankSystemClient.Controllers.LoginController.Login(User user) in E:\RetailBankingSystem\RetailBankSystemClient\Controllers\LoginController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-16 12:43:11,252 Application started. Press Ctrl+C to shut down.
+2020-12-16 12:43:11,280 Hosting environment: Development
+2020-12-16 12:43:11,282 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 12:43:24,526 User Login
+2020-12-16 12:44:54,469 Application started. Press Ctrl+C to shut down.
+2020-12-16 12:44:54,490 Hosting environment: Development
+2020-12-16 12:44:54,494 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 12:45:07,045 User Login
+2020-12-16 12:45:17,930 User Log Out
+2020-12-16 12:46:07,974 Application started. Press Ctrl+C to shut down.
+2020-12-16 12:46:07,989 Hosting environment: Development
+2020-12-16 12:46:07,992 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 12:46:18,979 User Login
+2020-12-16 12:46:51,094 Application started. Press Ctrl+C to shut down.
+2020-12-16 12:46:51,113 Hosting environment: Development
+2020-12-16 12:46:51,116 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 12:47:01,829 User Login
+2020-12-16 12:47:41,826 Application started. Press Ctrl+C to shut down.
+2020-12-16 12:47:41,843 Hosting environment: Development
+2020-12-16 12:47:41,845 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 12:47:53,098 User Login
+2020-12-16 12:49:06,045 Application started. Press Ctrl+C to shut down.
+2020-12-16 12:49:06,062 Hosting environment: Development
+2020-12-16 12:49:06,065 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 12:49:20,605 User Login
+2020-12-16 12:49:29,674 User Log Out
+2020-12-16 12:52:19,027 Application started. Press Ctrl+C to shut down.
+2020-12-16 12:52:19,039 Hosting environment: Development
+2020-12-16 12:52:19,040 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 13:02:01,863 Application started. Press Ctrl+C to shut down.
+2020-12-16 13:02:01,876 Hosting environment: Development
+2020-12-16 13:02:01,878 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 13:02:10,881 User Login
+2020-12-16 13:02:12,465 An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: U. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at RetailBankSystemClient.Controllers.LoginController.Login(User user) in E:\RetailBankingSystem\RetailBankSystemClient\Controllers\LoginController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-16 13:02:55,137 Application started. Press Ctrl+C to shut down.
+2020-12-16 13:02:55,150 Hosting environment: Development
+2020-12-16 13:02:55,152 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 13:03:04,085 User Login
+2020-12-16 13:03:04,549 An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: U. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at RetailBankSystemClient.Controllers.LoginController.Login(User user) in E:\RetailBankingSystem\RetailBankSystemClient\Controllers\LoginController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-16 13:04:23,387 Application started. Press Ctrl+C to shut down.
+2020-12-16 13:04:23,399 Hosting environment: Development
+2020-12-16 13:04:23,401 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 13:04:31,122 User Login
+2020-12-16 13:04:53,571 User Login
+2020-12-16 13:04:58,875 User Log Out
+2020-12-16 13:06:28,259 Application started. Press Ctrl+C to shut down.
+2020-12-16 13:06:28,269 Hosting environment: Development
+2020-12-16 13:06:28,271 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 13:06:39,295 User Login
+2020-12-16 13:15:02,827 Application started. Press Ctrl+C to shut down.
+2020-12-16 13:15:02,867 Hosting environment: Development
+2020-12-16 13:15:02,870 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 13:15:48,144 User Login
+2020-12-16 13:16:16,089 Exceptions occured due to :A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2020-12-16 13:17:16,174 Application started. Press Ctrl+C to shut down.
+2020-12-16 13:17:16,190 Hosting environment: Development
+2020-12-16 13:17:16,193 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 13:17:38,046 User Login
+2020-12-16 13:27:12,279 Application started. Press Ctrl+C to shut down.
+2020-12-16 13:27:12,291 Hosting environment: Development
+2020-12-16 13:27:12,293 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 13:27:24,312 User Login
+2020-12-16 13:32:59,474 Application started. Press Ctrl+C to shut down.
+2020-12-16 13:32:59,506 Hosting environment: Development
+2020-12-16 13:32:59,512 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 13:33:12,251 User Login
+2020-12-16 13:35:14,278 Application started. Press Ctrl+C to shut down.
+2020-12-16 13:35:14,294 Hosting environment: Development
+2020-12-16 13:35:14,295 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 13:35:25,540 User Login
+2020-12-16 13:36:18,062 Application started. Press Ctrl+C to shut down.
+2020-12-16 13:36:18,084 Hosting environment: Development
+2020-12-16 13:36:18,087 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 13:36:29,379 User Login
+2020-12-16 13:37:12,771 Application started. Press Ctrl+C to shut down.
+2020-12-16 13:37:12,792 Hosting environment: Development
+2020-12-16 13:37:12,795 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 13:37:23,156 User Login
+2020-12-16 13:39:40,675 Application started. Press Ctrl+C to shut down.
+2020-12-16 13:39:40,698 Hosting environment: Development
+2020-12-16 13:39:40,702 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 13:39:51,813 User Login
+2020-12-16 13:46:40,599 Application started. Press Ctrl+C to shut down.
+2020-12-16 13:46:40,647 Hosting environment: Development
+2020-12-16 13:46:40,651 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 13:46:53,561 User Login
+2020-12-16 13:47:21,999 Exception occured due to  The entity type 'TransferViewModel' requires a primary key to be defined. If you intended to use a keyless entity type call 'HasNoKey()'.
+2020-12-16 13:49:17,167 Exception occured due to  The entity type 'TransferViewModel' requires a primary key to be defined. If you intended to use a keyless entity type call 'HasNoKey()'.
+2020-12-16 13:50:27,124 Exception occured due to  The entity type 'TransferViewModel' requires a primary key to be defined. If you intended to use a keyless entity type call 'HasNoKey()'.
+2020-12-16 13:51:45,980 Application started. Press Ctrl+C to shut down.
+2020-12-16 13:51:46,010 Hosting environment: Development
+2020-12-16 13:51:46,019 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 13:51:58,011 User Login
+2020-12-16 13:52:21,617 Exception occured due to  The entity type 'TransferViewModel' requires a primary key to be defined. If you intended to use a keyless entity type call 'HasNoKey()'.
+2020-12-16 13:53:33,055 Application started. Press Ctrl+C to shut down.
+2020-12-16 13:53:33,080 Hosting environment: Development
+2020-12-16 13:53:33,085 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 13:53:44,329 User Login
+2020-12-16 13:54:23,297 Exception occured due to  The entity type 'TransferViewModel' requires a primary key to be defined. If you intended to use a keyless entity type call 'HasNoKey()'.
+2020-12-16 13:56:37,004 Exception occured due to  The entity type 'TransferViewModel' requires a primary key to be defined. If you intended to use a keyless entity type call 'HasNoKey()'.
+2020-12-16 13:57:19,875 Exception occured due to  The entity type 'TransferViewModel' requires a primary key to be defined. If you intended to use a keyless entity type call 'HasNoKey()'.
+2020-12-16 13:58:34,630 Exception occured due to  The entity type 'TransferViewModel' requires a primary key to be defined. If you intended to use a keyless entity type call 'HasNoKey()'.
+2020-12-16 14:00:09,241 Exception occured due to  The entity type 'TransferViewModel' requires a primary key to be defined. If you intended to use a keyless entity type call 'HasNoKey()'.
+2020-12-16 14:02:33,490 Application started. Press Ctrl+C to shut down.
+2020-12-16 14:02:33,511 Hosting environment: Development
+2020-12-16 14:02:33,513 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 14:02:42,992 User Login
+2020-12-16 14:03:30,950 Exception occured due to  The entity type 'TransferViewModel' requires a primary key to be defined. If you intended to use a keyless entity type call 'HasNoKey()'.
+2020-12-16 14:06:20,459 Application started. Press Ctrl+C to shut down.
+2020-12-16 14:06:20,480 Hosting environment: Development
+2020-12-16 14:06:20,482 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 14:06:32,567 User Login
+2020-12-16 14:07:41,467 Exception occured due to  The entity type 'TransferViewModel' requires a primary key to be defined. If you intended to use a keyless entity type call 'HasNoKey()'.
+2020-12-16 14:31:03,343 Application started. Press Ctrl+C to shut down.
+2020-12-16 14:31:03,400 Hosting environment: Development
+2020-12-16 14:31:03,403 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 14:31:22,141 User Login
+2020-12-16 14:32:24,953 Exception occured due to  The method or operation is not implemented.
+2020-12-16 14:37:35,832 Application started. Press Ctrl+C to shut down.
+2020-12-16 14:37:35,852 Hosting environment: Development
+2020-12-16 14:37:35,855 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 14:37:49,888 User Login
+2020-12-16 14:46:45,443 Application started. Press Ctrl+C to shut down.
+2020-12-16 14:46:45,465 Hosting environment: Development
+2020-12-16 14:46:45,469 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 14:47:00,360 User Login
+2020-12-16 14:48:25,224 Application started. Press Ctrl+C to shut down.
+2020-12-16 14:48:25,243 Hosting environment: Development
+2020-12-16 14:48:25,245 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 14:48:44,715 User Login
+2020-12-16 14:48:54,957 User Login
+2020-12-16 14:51:39,451 Application started. Press Ctrl+C to shut down.
+2020-12-16 14:51:39,465 Hosting environment: Development
+2020-12-16 14:51:39,467 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 14:54:34,268 User Login
+2020-12-16 14:54:48,588 User Login
+2020-12-16 14:57:45,287 User Log Out
+2020-12-16 14:57:55,943 User Login
+2020-12-16 14:58:11,435 User Login
+2020-12-16 14:59:05,155 Exceptions Occured due to  No connection could be made because the target machine actively refused it.
+2020-12-16 15:00:11,534 Exceptions Occured due to  No connection could be made because the target machine actively refused it.
+2020-12-16 15:01:20,415 Application started. Press Ctrl+C to shut down.
+2020-12-16 15:01:20,434 Hosting environment: Development
+2020-12-16 15:01:20,437 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 15:01:32,718 User Login
+2020-12-16 15:02:31,884 Application started. Press Ctrl+C to shut down.
+2020-12-16 15:02:31,900 Hosting environment: Development
+2020-12-16 15:02:31,903 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 15:04:08,614 Application started. Press Ctrl+C to shut down.
+2020-12-16 15:04:08,634 Hosting environment: Development
+2020-12-16 15:04:08,637 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 15:04:24,558 User Login
+2020-12-16 15:11:57,185 Application started. Press Ctrl+C to shut down.
+2020-12-16 15:11:57,210 Hosting environment: Development
+2020-12-16 15:11:57,214 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 15:12:10,393 User Login
+2020-12-16 15:13:12,325 Application started. Press Ctrl+C to shut down.
+2020-12-16 15:13:12,347 Hosting environment: Development
+2020-12-16 15:13:12,350 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 15:13:27,428 User Login
+2020-12-16 15:45:02,859 Application started. Press Ctrl+C to shut down.
+2020-12-16 15:45:02,884 Hosting environment: Development
+2020-12-16 15:45:02,887 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 15:45:23,852 User Login
+2020-12-16 15:55:06,429 Application started. Press Ctrl+C to shut down.
+2020-12-16 15:55:06,450 Hosting environment: Development
+2020-12-16 15:55:06,454 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 15:55:36,060 User Login
+2020-12-16 16:01:02,125 Application started. Press Ctrl+C to shut down.
+2020-12-16 16:01:02,135 Hosting environment: Development
+2020-12-16 16:01:02,137 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 16:01:13,816 User Login
+2020-12-16 16:08:46,246 Application started. Press Ctrl+C to shut down.
+2020-12-16 16:08:46,256 Hosting environment: Development
+2020-12-16 16:08:46,257 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 16:09:07,801 User Login
+2020-12-16 16:10:35,511 Application started. Press Ctrl+C to shut down.
+2020-12-16 16:10:35,521 Hosting environment: Development
+2020-12-16 16:10:35,522 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 16:10:45,735 User Login
+2020-12-16 16:14:58,154 Application started. Press Ctrl+C to shut down.
+2020-12-16 16:14:58,164 Hosting environment: Development
+2020-12-16 16:14:58,166 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 16:15:09,385 User Login
+2020-12-16 16:16:56,266 Application started. Press Ctrl+C to shut down.
+2020-12-16 16:16:56,276 Hosting environment: Development
+2020-12-16 16:16:56,278 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 16:18:06,657 Application started. Press Ctrl+C to shut down.
+2020-12-16 16:18:06,668 Hosting environment: Development
+2020-12-16 16:18:06,670 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 16:18:16,629 User Login
+2020-12-16 16:19:30,753 Application started. Press Ctrl+C to shut down.
+2020-12-16 16:19:30,773 Hosting environment: Development
+2020-12-16 16:19:30,776 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 16:19:42,416 User Login
+2020-12-16 16:22:23,522 Application started. Press Ctrl+C to shut down.
+2020-12-16 16:22:23,540 Hosting environment: Development
+2020-12-16 16:22:23,543 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 16:22:46,475 User Login
+2020-12-16 16:22:51,637 An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it.
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at RetailBankSystemClient.Controllers.LoginController.Login(User user) in E:\RetailBankingSystem\RetailBankSystemClient\Controllers\LoginController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-16 16:23:42,524 User Login
+2020-12-16 16:23:53,091 Exceptions Occured due to  No connection could be made because the target machine actively refused it.
+2020-12-16 16:25:35,405 Exceptions Occured due to  No connection could be made because the target machine actively refused it.
+2020-12-16 16:29:38,816 Exceptions occured due to No connection could be made because the target machine actively refused it.
+2020-12-16 16:30:28,355 Application started. Press Ctrl+C to shut down.
+2020-12-16 16:30:28,365 Hosting environment: Development
+2020-12-16 16:30:28,367 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 16:30:38,910 User Login
+2020-12-16 16:31:21,071 Application started. Press Ctrl+C to shut down.
+2020-12-16 16:31:21,092 Hosting environment: Development
+2020-12-16 16:31:21,094 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 16:31:32,475 User Login
+2020-12-16 16:31:54,912 Exceptions occured due to No connection could be made because the target machine actively refused it.
+2020-12-16 16:33:51,144 Application started. Press Ctrl+C to shut down.
+2020-12-16 16:33:51,155 Hosting environment: Development
+2020-12-16 16:33:51,157 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 16:34:01,516 User Login
+2020-12-16 16:34:41,307 Application started. Press Ctrl+C to shut down.
+2020-12-16 16:34:41,328 Hosting environment: Development
+2020-12-16 16:34:41,331 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 16:34:52,582 User Login
+2020-12-16 16:36:18,614 Application started. Press Ctrl+C to shut down.
+2020-12-16 16:36:18,624 Hosting environment: Development
+2020-12-16 16:36:18,625 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 16:36:30,033 User Login
+2020-12-16 16:36:56,118 Exceptions occured due to No connection could be made because the target machine actively refused it.
+2020-12-16 16:39:38,681 Application started. Press Ctrl+C to shut down.
+2020-12-16 16:39:38,699 Hosting environment: Development
+2020-12-16 16:39:38,702 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 16:39:52,042 User Login
+2020-12-16 16:40:03,565 Exceptions Occured due to  No connection could be made because the target machine actively refused it.
+2020-12-16 16:40:05,771 Exceptions Occured due to  No connection could be made because the target machine actively refused it.
+2020-12-16 16:43:58,669 Application started. Press Ctrl+C to shut down.
+2020-12-16 16:43:58,681 Hosting environment: Development
+2020-12-16 16:43:58,683 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 16:44:11,176 User Login
+2020-12-16 16:45:34,093 Exception occured due to  No connection could be made because the target machine actively refused it.
+2020-12-16 16:45:50,113 Exceptions occured due to :No connection could be made because the target machine actively refused it.
+2020-12-16 16:45:53,014 Exceptions occured due to :No connection could be made because the target machine actively refused it.
+2020-12-16 16:49:11,416 Application started. Press Ctrl+C to shut down.
+2020-12-16 16:49:11,425 Hosting environment: Development
+2020-12-16 16:49:11,427 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 16:49:44,433 User Login
+2020-12-16 16:49:53,632 Exceptions occured due to :No connection could be made because the target machine actively refused it.
+2020-12-16 16:52:30,125 Application started. Press Ctrl+C to shut down.
+2020-12-16 16:52:30,149 Hosting environment: Development
+2020-12-16 16:52:30,153 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 16:52:46,991 User Login
+2020-12-16 17:04:52,517 Application started. Press Ctrl+C to shut down.
+2020-12-16 17:04:52,531 Hosting environment: Development
+2020-12-16 17:04:52,533 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 17:05:28,864 Application started. Press Ctrl+C to shut down.
+2020-12-16 17:05:28,883 Hosting environment: Development
+2020-12-16 17:05:28,885 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 17:05:41,598 User Login
+2020-12-16 17:06:00,545 Exception occured due to  No connection could be made because the target machine actively refused it.
+2020-12-16 17:08:07,016 Application started. Press Ctrl+C to shut down.
+2020-12-16 17:08:07,025 Hosting environment: Development
+2020-12-16 17:08:07,027 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 17:08:18,839 User Login
+2020-12-16 17:08:34,045 Exception occured due to  No connection could be made because the target machine actively refused it.
+2020-12-16 17:08:57,178 Application started. Press Ctrl+C to shut down.
+2020-12-16 17:08:57,197 Hosting environment: Development
+2020-12-16 17:08:57,200 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 17:09:06,521 User Login
+2020-12-16 17:09:25,384 Exception occured due to  No connection could be made because the target machine actively refused it.
+2020-12-16 17:09:54,035 Application started. Press Ctrl+C to shut down.
+2020-12-16 17:09:54,054 Hosting environment: Development
+2020-12-16 17:09:54,058 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 17:10:40,273 User Login
+2020-12-16 17:10:56,725 Exception occured due to  No connection could be made because the target machine actively refused it.
+2020-12-16 17:19:35,874 Application started. Press Ctrl+C to shut down.
+2020-12-16 17:19:35,892 Hosting environment: Development
+2020-12-16 17:19:35,895 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 17:19:46,656 User Login
+2020-12-16 17:22:11,126 Application started. Press Ctrl+C to shut down.
+2020-12-16 17:22:11,136 Hosting environment: Development
+2020-12-16 17:22:11,138 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 17:22:20,448 User Login
+2020-12-16 17:24:33,895 Application started. Press Ctrl+C to shut down.
+2020-12-16 17:24:33,906 Hosting environment: Development
+2020-12-16 17:24:33,908 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 17:24:45,901 User Login
+2020-12-16 17:25:53,879 Application started. Press Ctrl+C to shut down.
+2020-12-16 17:25:53,900 Hosting environment: Development
+2020-12-16 17:25:53,903 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 17:26:06,390 User Login
+2020-12-16 17:27:37,306 Application started. Press Ctrl+C to shut down.
+2020-12-16 17:27:37,321 Hosting environment: Development
+2020-12-16 17:27:37,324 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 17:27:47,303 User Login
+2020-12-16 17:29:04,675 Application started. Press Ctrl+C to shut down.
+2020-12-16 17:29:04,686 Hosting environment: Development
+2020-12-16 17:29:04,688 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 17:29:19,098 User Login
+2020-12-16 17:30:54,430 Application started. Press Ctrl+C to shut down.
+2020-12-16 17:30:54,450 Hosting environment: Development
+2020-12-16 17:30:54,452 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 17:31:05,349 User Login
+2020-12-16 17:31:44,024 Exception occured due to  No connection could be made because the target machine actively refused it.
+2020-12-16 17:36:31,004 Application started. Press Ctrl+C to shut down.
+2020-12-16 17:36:31,023 Hosting environment: Development
+2020-12-16 17:36:31,025 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 17:36:45,981 User Login
+2020-12-16 17:38:35,351 User Log Out
+2020-12-16 17:41:23,262 Application started. Press Ctrl+C to shut down.
+2020-12-16 17:41:23,290 Hosting environment: Development
+2020-12-16 17:41:23,294 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 17:41:40,670 User Login
+2020-12-16 17:43:27,527 Application started. Press Ctrl+C to shut down.
+2020-12-16 17:43:27,550 Hosting environment: Development
+2020-12-16 17:43:27,553 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 17:43:43,442 User Login
+2020-12-16 17:45:08,515 Application started. Press Ctrl+C to shut down.
+2020-12-16 17:45:08,528 Hosting environment: Development
+2020-12-16 17:45:08,531 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 17:45:23,643 User Login
+2020-12-16 17:49:44,075 Application started. Press Ctrl+C to shut down.
+2020-12-16 17:49:44,086 Hosting environment: Development
+2020-12-16 17:49:44,088 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-16 17:49:55,623 User Login
+2020-12-16 17:50:35,084 Exceptions occured due to No connection could be made because the target machine actively refused it.
+2020-12-17 15:14:52,340 Application started. Press Ctrl+C to shut down.
+2020-12-17 15:14:52,366 Hosting environment: Development
+2020-12-17 15:14:52,370 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 15:16:00,386 User Login
+2020-12-17 15:16:17,347 Exceptions occured due to :No connection could be made because the target machine actively refused it.
+2020-12-17 15:34:52,583 Application started. Press Ctrl+C to shut down.
+2020-12-17 15:34:52,595 Hosting environment: Development
+2020-12-17 15:34:52,596 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 15:35:05,581 User Login
+2020-12-17 15:56:33,397 Application started. Press Ctrl+C to shut down.
+2020-12-17 15:56:33,421 Hosting environment: Development
+2020-12-17 15:56:33,424 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 15:58:13,129 User Login
+2020-12-17 15:58:22,333 Exceptions occured due to :No connection could be made because the target machine actively refused it.
+2020-12-17 15:58:32,816 Exceptions Occured due to No connection could be made because the target machine actively refused it.
+2020-12-17 16:09:43,772 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:09:43,784 Hosting environment: Development
+2020-12-17 16:09:43,786 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:10:37,671 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:10:37,688 Hosting environment: Development
+2020-12-17 16:10:37,691 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:12:41,792 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:12:41,802 Hosting environment: Development
+2020-12-17 16:12:41,804 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:13:25,885 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:13:25,895 Hosting environment: Development
+2020-12-17 16:13:25,896 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:13:53,774 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:13:53,794 Hosting environment: Development
+2020-12-17 16:13:53,796 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:14:17,592 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:14:17,609 Hosting environment: Development
+2020-12-17 16:14:17,611 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:15:05,357 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:15:05,375 Hosting environment: Development
+2020-12-17 16:15:05,378 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:15:56,629 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:15:56,646 Hosting environment: Development
+2020-12-17 16:15:56,649 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:18:25,443 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:18:25,454 Hosting environment: Development
+2020-12-17 16:18:25,455 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:19:32,446 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:19:32,457 Hosting environment: Development
+2020-12-17 16:19:32,459 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:21:24,845 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:21:24,856 Hosting environment: Development
+2020-12-17 16:21:24,857 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:22:14,809 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:22:14,821 Hosting environment: Development
+2020-12-17 16:22:14,823 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:23:04,739 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:23:04,751 Hosting environment: Development
+2020-12-17 16:23:04,753 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:23:56,201 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:23:56,217 Hosting environment: Development
+2020-12-17 16:23:56,221 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:24:26,559 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:24:26,577 Hosting environment: Development
+2020-12-17 16:24:26,580 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:24:53,868 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:24:53,893 Hosting environment: Development
+2020-12-17 16:24:53,896 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:25:27,705 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:25:27,722 Hosting environment: Development
+2020-12-17 16:25:27,724 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:25:58,167 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:25:58,185 Hosting environment: Development
+2020-12-17 16:25:58,187 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:26:35,881 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:26:35,896 Hosting environment: Development
+2020-12-17 16:26:35,898 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:26:59,674 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:26:59,689 Hosting environment: Development
+2020-12-17 16:26:59,692 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:28:12,642 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:28:12,652 Hosting environment: Development
+2020-12-17 16:28:12,653 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:28:34,936 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:28:34,954 Hosting environment: Development
+2020-12-17 16:28:34,957 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:29:13,167 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:29:13,184 Hosting environment: Development
+2020-12-17 16:29:13,187 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:29:45,626 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:29:45,642 Hosting environment: Development
+2020-12-17 16:29:45,646 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:30:09,952 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:30:09,968 Hosting environment: Development
+2020-12-17 16:30:09,971 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:30:35,144 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:30:35,162 Hosting environment: Development
+2020-12-17 16:30:35,165 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:31:05,658 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:31:05,681 Hosting environment: Development
+2020-12-17 16:31:05,685 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:32:06,340 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:32:06,352 Hosting environment: Development
+2020-12-17 16:32:06,355 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:32:32,654 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:32:32,668 Hosting environment: Development
+2020-12-17 16:32:32,670 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:32:58,669 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:32:58,681 Hosting environment: Development
+2020-12-17 16:32:58,682 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:33:34,298 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:33:34,315 Hosting environment: Development
+2020-12-17 16:33:34,317 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:34:24,545 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:34:24,565 Hosting environment: Development
+2020-12-17 16:34:24,568 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:35:10,559 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:35:10,577 Hosting environment: Development
+2020-12-17 16:35:10,580 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:36:11,449 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:36:11,460 Hosting environment: Development
+2020-12-17 16:36:11,462 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:36:33,320 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:36:33,330 Hosting environment: Development
+2020-12-17 16:36:33,332 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:37:34,923 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:37:34,933 Hosting environment: Development
+2020-12-17 16:37:34,935 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:38:31,893 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:38:31,912 Hosting environment: Development
+2020-12-17 16:38:31,914 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:38:55,949 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:38:55,968 Hosting environment: Development
+2020-12-17 16:38:55,970 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:39:15,870 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:39:15,890 Hosting environment: Development
+2020-12-17 16:39:15,892 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:40:13,853 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:40:13,868 Hosting environment: Development
+2020-12-17 16:40:13,869 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:40:39,937 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:40:39,948 Hosting environment: Development
+2020-12-17 16:40:39,950 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:41:33,575 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:41:33,592 Hosting environment: Development
+2020-12-17 16:41:33,594 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:42:19,012 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:42:19,033 Hosting environment: Development
+2020-12-17 16:42:19,036 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:43:06,143 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:43:06,154 Hosting environment: Development
+2020-12-17 16:43:06,156 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:43:48,662 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:43:48,674 Hosting environment: Development
+2020-12-17 16:43:48,676 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:46:29,966 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:46:29,987 Hosting environment: Development
+2020-12-17 16:46:29,991 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:50:49,995 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:50:50,017 Hosting environment: Development
+2020-12-17 16:50:50,021 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:51:56,460 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:51:56,489 Hosting environment: Development
+2020-12-17 16:51:56,492 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 16:53:35,704 Application started. Press Ctrl+C to shut down.
+2020-12-17 16:53:35,721 Hosting environment: Development
+2020-12-17 16:53:35,723 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:01:05,569 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:01:05,581 Hosting environment: Development
+2020-12-17 17:01:05,583 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:01:18,456 User Login
+2020-12-17 17:02:35,966 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:02:35,982 Hosting environment: Development
+2020-12-17 17:02:35,983 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:02:48,930 User Login
+2020-12-17 17:03:36,914 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:03:36,934 Hosting environment: Development
+2020-12-17 17:03:36,936 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:03:47,303 User Login
+2020-12-17 17:04:31,663 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:04:31,673 Hosting environment: Development
+2020-12-17 17:04:31,675 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:04:42,555 User Login
+2020-12-17 17:05:28,853 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:05:28,864 Hosting environment: Development
+2020-12-17 17:05:28,866 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:06:01,510 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:06:01,529 Hosting environment: Development
+2020-12-17 17:06:01,531 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:06:10,928 User Login
+2020-12-17 17:10:50,232 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:10:50,243 Hosting environment: Development
+2020-12-17 17:10:50,245 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:11:00,032 User Login
+2020-12-17 17:12:51,316 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:12:51,328 Hosting environment: Development
+2020-12-17 17:12:51,330 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:13:04,430 User Login
+2020-12-17 17:15:23,122 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:15:23,132 Hosting environment: Development
+2020-12-17 17:15:23,133 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:15:43,933 User Login
+2020-12-17 17:16:51,424 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:16:51,435 Hosting environment: Development
+2020-12-17 17:16:51,437 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:16:58,779 User Login
+2020-12-17 17:17:33,177 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:17:33,198 Hosting environment: Development
+2020-12-17 17:17:33,201 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:17:40,141 User Login
+2020-12-17 17:19:34,172 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:19:34,182 Hosting environment: Development
+2020-12-17 17:19:34,184 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:19:41,391 User Login
+2020-12-17 17:21:03,478 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:21:03,498 Hosting environment: Development
+2020-12-17 17:21:03,500 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:21:11,002 User Login
+2020-12-17 17:22:55,614 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:22:55,624 Hosting environment: Development
+2020-12-17 17:22:55,625 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:23:02,881 User Login
+2020-12-17 17:26:26,862 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:26:26,872 Hosting environment: Development
+2020-12-17 17:26:26,874 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:26:54,215 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:26:54,225 Hosting environment: Development
+2020-12-17 17:26:54,226 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:26:59,876 User Login
+2020-12-17 17:28:17,993 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:28:18,010 Hosting environment: Development
+2020-12-17 17:28:18,012 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:28:23,918 User Login
+2020-12-17 17:29:07,544 User Log Out
+2020-12-17 17:30:11,690 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:30:11,700 Hosting environment: Development
+2020-12-17 17:30:11,702 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:30:48,721 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:30:48,741 Hosting environment: Development
+2020-12-17 17:30:48,743 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:31:35,831 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:31:35,850 Hosting environment: Development
+2020-12-17 17:31:35,853 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:32:13,559 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:32:13,575 Hosting environment: Development
+2020-12-17 17:32:13,578 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:32:19,675 User Login
+2020-12-17 17:33:27,009 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:33:27,027 Hosting environment: Development
+2020-12-17 17:33:27,029 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:33:33,998 User Login
+2020-12-17 17:35:17,621 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:35:17,633 Hosting environment: Development
+2020-12-17 17:35:17,635 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:35:23,860 User Login
+2020-12-17 17:36:03,480 Exceptions Occured due to  No connection could be made because the target machine actively refused it.
+2020-12-17 17:38:17,528 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:38:17,540 Hosting environment: Development
+2020-12-17 17:38:17,541 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:38:23,512 User Login
+2020-12-17 17:41:49,298 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:41:49,309 Hosting environment: Development
+2020-12-17 17:41:49,311 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:41:56,764 User Login
+2020-12-17 17:43:44,558 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:43:44,575 Hosting environment: Development
+2020-12-17 17:43:44,578 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:43:52,389 User Login
+2020-12-17 17:48:42,652 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:48:42,663 Hosting environment: Development
+2020-12-17 17:48:42,665 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:50:10,863 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:50:10,877 Hosting environment: Development
+2020-12-17 17:50:10,879 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:50:44,500 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:50:44,513 Hosting environment: Development
+2020-12-17 17:50:44,516 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:51:24,769 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:51:24,789 Hosting environment: Development
+2020-12-17 17:51:24,792 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:53:40,496 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:53:40,509 Hosting environment: Development
+2020-12-17 17:53:40,511 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:54:02,659 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:54:02,670 Hosting environment: Development
+2020-12-17 17:54:02,672 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:54:31,044 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:54:31,056 Hosting environment: Development
+2020-12-17 17:54:31,058 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:57:00,693 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:57:00,707 Hosting environment: Development
+2020-12-17 17:57:00,709 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:57:28,656 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:57:28,669 Hosting environment: Development
+2020-12-17 17:57:28,671 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 17:59:46,927 Application started. Press Ctrl+C to shut down.
+2020-12-17 17:59:46,939 Hosting environment: Development
+2020-12-17 17:59:46,941 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 18:00:23,497 Application started. Press Ctrl+C to shut down.
+2020-12-17 18:00:23,508 Hosting environment: Development
+2020-12-17 18:00:23,509 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 18:01:17,500 Application started. Press Ctrl+C to shut down.
+2020-12-17 18:01:17,511 Hosting environment: Development
+2020-12-17 18:01:17,513 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 18:03:16,445 Application started. Press Ctrl+C to shut down.
+2020-12-17 18:03:16,455 Hosting environment: Development
+2020-12-17 18:03:16,456 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 18:04:59,428 Application started. Press Ctrl+C to shut down.
+2020-12-17 18:04:59,447 Hosting environment: Development
+2020-12-17 18:04:59,450 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 18:05:37,292 Application started. Press Ctrl+C to shut down.
+2020-12-17 18:05:37,303 Hosting environment: Development
+2020-12-17 18:05:37,304 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 18:05:57,510 Application started. Press Ctrl+C to shut down.
+2020-12-17 18:05:57,521 Hosting environment: Development
+2020-12-17 18:05:57,523 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 18:06:35,627 Application started. Press Ctrl+C to shut down.
+2020-12-17 18:06:35,638 Hosting environment: Development
+2020-12-17 18:06:35,640 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 18:08:23,890 Application started. Press Ctrl+C to shut down.
+2020-12-17 18:08:23,900 Hosting environment: Development
+2020-12-17 18:08:23,902 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 18:09:02,896 Application started. Press Ctrl+C to shut down.
+2020-12-17 18:09:02,907 Hosting environment: Development
+2020-12-17 18:09:02,909 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 18:09:32,985 Application started. Press Ctrl+C to shut down.
+2020-12-17 18:09:32,997 Hosting environment: Development
+2020-12-17 18:09:32,999 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 18:12:38,645 Application started. Press Ctrl+C to shut down.
+2020-12-17 18:12:38,660 Hosting environment: Development
+2020-12-17 18:12:38,662 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 18:13:17,548 Application started. Press Ctrl+C to shut down.
+2020-12-17 18:13:17,559 Hosting environment: Development
+2020-12-17 18:13:17,561 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 18:22:46,498 Application started. Press Ctrl+C to shut down.
+2020-12-17 18:22:46,509 Hosting environment: Development
+2020-12-17 18:22:46,511 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 18:23:08,656 Application started. Press Ctrl+C to shut down.
+2020-12-17 18:23:08,666 Hosting environment: Development
+2020-12-17 18:23:08,668 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 18:23:36,098 Application started. Press Ctrl+C to shut down.
+2020-12-17 18:23:36,108 Hosting environment: Development
+2020-12-17 18:23:36,109 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
+2020-12-17 18:25:28,916 Application started. Press Ctrl+C to shut down.
+2020-12-17 18:25:28,937 Hosting environment: Development
+2020-12-17 18:25:28,941 Content root path: E:\Retailbanking System Final Copy\RetailBankSystemClient

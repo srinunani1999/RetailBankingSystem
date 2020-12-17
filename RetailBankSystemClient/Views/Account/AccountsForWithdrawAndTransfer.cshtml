@@ -1,0 +1,39 @@
+﻿@model IEnumerable<RetailBankSystemClient.ViewModels.AccountViewModel>
+
+@{
+    ViewData["Title"] = "AccountsForWithdrawAndTransfer";
+}
+
+<h1>Withdraw And Transfer</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Balance)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                <span>Rs.</span>
+                @Html.DisplayFor(modelItem => item.Balance)
+            </td>
+            <td>
+                <a class="text-black-50 " asp-area="" asp-controller="Account" asp-action="transfer" asp-route-id=@item.Id>Transfer</a> |
+
+                <a class="text-black-50" asp-area="" asp-controller="Account" asp-action="Withdraw" asp-route-id=@item.Id>Withdraw</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

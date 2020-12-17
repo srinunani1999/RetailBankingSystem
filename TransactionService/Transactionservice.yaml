@@ -1,0 +1,33 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: transactionservice-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: Transactionservice
+  template:
+    metadata:
+      labels:
+        app: Transactionservice
+    spec:
+      containers:
+      - name: transactionrepos
+        image: retailbankingsystempod1.azurecr.io/transactionrepos:latest
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: transactionconfig
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: transactionservice
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: Transactionservice
