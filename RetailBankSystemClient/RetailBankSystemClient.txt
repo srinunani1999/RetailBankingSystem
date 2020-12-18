@@ -1256,3 +1256,6 @@ System.Net.Http.HttpRequestException: No connection could be made because the ta
 2020-12-17 18:25:28,916 Application started. Press Ctrl+C to shut down.
 2020-12-17 18:25:28,937 Hosting environment: Development
 2020-12-17 18:25:28,941 Content root path: E:\Retailbanking System Final Copy\RetailBankSystemClient
+2020-12-17 18:42:40,852 Application started. Press Ctrl+C to shut down.
+2020-12-17 18:42:40,863 Hosting environment: Development
+2020-12-17 18:42:40,864 Content root path: E:\RetailBankingSystem\RetailBankSystemClient
