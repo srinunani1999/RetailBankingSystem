@@ -11,7 +11,7 @@ namespace RetailBankSystemClient.ViewModels
 		
 		[Display(Name = "Target Account"), Required]
 		public int Target_AccountId { get; set; }
-		[Display(Name = "Soucrce Account"), Required]
+		[Display(Name = "Source Account"), Required]
 		public int Source_AccountId { get; set; }
 		[Display(Name = "Amount"), Required]
 		public int amount { get; set; }

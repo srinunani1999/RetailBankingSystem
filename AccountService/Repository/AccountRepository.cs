@@ -129,7 +129,7 @@ namespace AccountService.Repository
 
                     DateTime to = DateTime.Now;
                     int month = DateTime.Now.Month, year = DateTime.Now.Year;
-                    string ds = "1/", ms = Convert.ToString(month) + "/", ys = Convert.ToString(year), ts = " 12:00:00 AM", fs = ds + ms + ys + ts;
+                    string ds = Convert.ToString(month) + "/", ms = "1/", ys = Convert.ToString(year), ts = " 12:00:00 AM", fs = ds + ms + ys + ts;
                     DateTime from = Convert.ToDateTime(fs);
                     foreach (var item in statements)
                     {

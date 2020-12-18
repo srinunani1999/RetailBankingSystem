@@ -77,6 +77,7 @@ namespace TransactionService.Controllers
         {
             int AccountId = Convert.ToInt16(model.AccountId);
             int amount = Convert.ToInt16(model.amount);
+            
             try
             {
                 TransactionStatus withdrawStatus = new TransactionStatus();
@@ -108,17 +109,14 @@ namespace TransactionService.Controllers
                 }
                 else if (ruleStatus.status == "denied")
                 {
-                    withdrawStatus.message = "Unbale to withdraw";
+                    withdrawStatus.message = "Unable to withdraw";
                     withdrawStatus.source_balance = account.Balance;
                     withdrawStatus.destination_balance = account.Balance;
-                   
-                       _log4net.Error("Unable to withdraw");
-                  
+
+                    _log4net.Error("Unable to withdraw");
+
                     _provider.addToTransactionHistory(withdrawStatus, account);
                     return Ok(withdrawStatus);
-
-
-
                 }
 
 

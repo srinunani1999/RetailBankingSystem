@@ -11,7 +11,7 @@ namespace RetailBankSystemClient.ViewModels
 		
 		[Display(Name = "Message")]
 		public string message { get; set; }
-		[Display(Name = "Source Balnace")]
+		[Display(Name = "Source Balance")]
 
 		public int source_balance { get; set; }
 		[Display(Name = "Destination Balance")]

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\RetailBankingSystem\\AccountNUnitTest\\AccountNUnitTest.csproj": {}
+    "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\AccountNUnitTest\\AccountNUnitTest.csproj": {}
   },
   "projects": {
-    "E:\\RetailBankingSystem\\AccountNUnitTest\\AccountNUnitTest.csproj": {
+    "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\AccountNUnitTest\\AccountNUnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\RetailBankingSystem\\AccountNUnitTest\\AccountNUnitTest.csproj",
+        "projectUniqueName": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\AccountNUnitTest\\AccountNUnitTest.csproj",
         "projectName": "AccountNUnitTest",
-        "projectPath": "E:\\RetailBankingSystem\\AccountNUnitTest\\AccountNUnitTest.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "E:\\RetailBankingSystem\\AccountNUnitTest\\obj\\",
+        "projectPath": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\AccountNUnitTest\\AccountNUnitTest.csproj",
+        "packagesPath": "C:\\Users\\nikhitha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\AccountNUnitTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nikhitha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\RetailBankingSystem\\AccountService\\AccountService.csproj": {
-                "projectPath": "E:\\RetailBankingSystem\\AccountService\\AccountService.csproj"
+              "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\AccountService\\AccountService.csproj": {
+                "projectPath": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\AccountService\\AccountService.csproj"
               }
             }
           }
@@ -77,21 +77,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\RetailBankingSystem\\AccountService\\AccountService.csproj": {
+    "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\AccountService\\AccountService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\RetailBankingSystem\\AccountService\\AccountService.csproj",
+        "projectUniqueName": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\AccountService\\AccountService.csproj",
         "projectName": "AccountService",
-        "projectPath": "E:\\RetailBankingSystem\\AccountService\\AccountService.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "E:\\RetailBankingSystem\\AccountService\\obj\\",
+        "projectPath": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\AccountService\\AccountService.csproj",
+        "packagesPath": "C:\\Users\\nikhitha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\AccountService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nikhitha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -154,7 +154,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

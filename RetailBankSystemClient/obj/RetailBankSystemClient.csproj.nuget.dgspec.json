@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\RetailBankingSystem\\RetailBankSystemClient\\RetailBankSystemClient.csproj": {}
+    "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\RetailBankSystemClient\\RetailBankSystemClient.csproj": {}
   },
   "projects": {
-    "E:\\RetailBankingSystem\\RetailBankSystemClient\\RetailBankSystemClient.csproj": {
+    "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\RetailBankSystemClient\\RetailBankSystemClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\RetailBankingSystem\\RetailBankSystemClient\\RetailBankSystemClient.csproj",
+        "projectUniqueName": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\RetailBankSystemClient\\RetailBankSystemClient.csproj",
         "projectName": "RetailBankSystemClient",
-        "projectPath": "E:\\RetailBankingSystem\\RetailBankSystemClient\\RetailBankSystemClient.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "E:\\RetailBankingSystem\\RetailBankSystemClient\\obj\\",
+        "projectPath": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\RetailBankSystemClient\\RetailBankSystemClient.csproj",
+        "packagesPath": "C:\\Users\\nikhitha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\RetailBankSystemClient\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nikhitha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -91,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

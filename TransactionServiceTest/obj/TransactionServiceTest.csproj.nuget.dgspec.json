@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\RetailBankingSystem\\TransactionServiceTest\\TransactionServiceTest.csproj": {}
+    "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\TransactionServiceTest\\TransactionServiceTest.csproj": {}
   },
   "projects": {
-    "E:\\RetailBankingSystem\\TransactionServiceTest\\TransactionServiceTest.csproj": {
+    "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\TransactionServiceTest\\TransactionServiceTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\RetailBankingSystem\\TransactionServiceTest\\TransactionServiceTest.csproj",
+        "projectUniqueName": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\TransactionServiceTest\\TransactionServiceTest.csproj",
         "projectName": "TransactionServiceTest",
-        "projectPath": "E:\\RetailBankingSystem\\TransactionServiceTest\\TransactionServiceTest.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "E:\\RetailBankingSystem\\TransactionServiceTest\\obj\\",
+        "projectPath": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\TransactionServiceTest\\TransactionServiceTest.csproj",
+        "packagesPath": "C:\\Users\\nikhitha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\TransactionServiceTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nikhitha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\RetailBankingSystem\\TransactionService\\TransactionService.csproj": {
-                "projectPath": "E:\\RetailBankingSystem\\TransactionService\\TransactionService.csproj"
+              "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\TransactionService\\TransactionService.csproj": {
+                "projectPath": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\TransactionService\\TransactionService.csproj"
               }
             }
           }
@@ -77,21 +77,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\RetailBankingSystem\\TransactionService\\TransactionService.csproj": {
+    "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\TransactionService\\TransactionService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\RetailBankingSystem\\TransactionService\\TransactionService.csproj",
+        "projectUniqueName": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\TransactionService\\TransactionService.csproj",
         "projectName": "TransactionService",
-        "projectPath": "E:\\RetailBankingSystem\\TransactionService\\TransactionService.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "E:\\RetailBankingSystem\\TransactionService\\obj\\",
+        "projectPath": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\TransactionService\\TransactionService.csproj",
+        "packagesPath": "C:\\Users\\nikhitha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\TransactionService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nikhitha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -154,7 +154,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

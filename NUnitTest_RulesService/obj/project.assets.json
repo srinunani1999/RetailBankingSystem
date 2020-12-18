@@ -7509,19 +7509,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {}
+    "C:\\Users\\nikhitha\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\RetailBankingSystem\\NUnitTest_RulesService\\NUnitTest_RulesService.csproj",
+      "projectUniqueName": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\NUnitTest_RulesService\\NUnitTest_RulesService.csproj",
       "projectName": "NUnitTest_RulesService",
-      "projectPath": "E:\\RetailBankingSystem\\NUnitTest_RulesService\\NUnitTest_RulesService.csproj",
-      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "E:\\RetailBankingSystem\\NUnitTest_RulesService\\obj\\",
+      "projectPath": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\NUnitTest_RulesService\\NUnitTest_RulesService.csproj",
+      "packagesPath": "C:\\Users\\nikhitha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\NUnitTest_RulesService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nikhitha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7534,8 +7534,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "E:\\RetailBankingSystem\\RulesService\\RulesService.csproj": {
-              "projectPath": "E:\\RetailBankingSystem\\RulesService\\RulesService.csproj"
+            "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\RulesService\\RulesService.csproj": {
+              "projectPath": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\RulesService\\RulesService.csproj"
             }
           }
         }
@@ -7584,7 +7584,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

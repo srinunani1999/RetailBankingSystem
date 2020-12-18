@@ -200,6 +200,7 @@ namespace TransactionService.Providers
                 //    return new TransactionStatus() { message = "Transfer Not Allowed" };
                 //}
                 Account account = getAccount(Source_AccountId);
+                Account targetAccount = getAccount(Target_AccountId);
                 RuleStatus ruleStatus = rulesStatus(Source_AccountId, amount, account);
                 if (ruleStatus.status == "allowed")
                 {
@@ -211,8 +212,6 @@ namespace TransactionService.Providers
                     addToTransactionHistory(status, account);
                     transferstatus.source_balance = status.destination_balance;
 
-
-                    Account targetAccount = getAccount(Target_AccountId);
                     TransactionStatus targetStatus = deposit(Target_AccountId, amount);
 
                     if (status.message == null)
@@ -221,12 +220,12 @@ namespace TransactionService.Providers
                     }
                     addToTransactionHistory(targetStatus, targetAccount);
                     transferstatus.destination_balance = targetStatus.destination_balance;
-                    transferstatus.message = "Tranferred " + amount + " from account " + Source_AccountId + " to Account " + Target_AccountId;
+                    transferstatus.message = "Transfered Rs." + amount + " from Account " + Source_AccountId + " to Account " + Target_AccountId;
                     _log4net.Info("Transfer  from Account Id: " + Source_AccountId + "to Account Id" + Target_AccountId + " Completed Successfully");
                     return transferstatus;
 
                 }
-                return new TransactionStatus() { message = "Unable to transfer into target account " + Target_AccountId };
+                return new TransactionStatus() { message = "Unable to transfer Rs."+ amount +" from Account "+ Source_AccountId +" into target account " + Target_AccountId , source_balance=account.Balance, destination_balance=targetAccount.Balance };
 
 
 
