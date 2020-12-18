@@ -106,6 +106,22 @@ namespace TransactionService.Controllers
 
 
                 }
+                else if (ruleStatus.status == "denied")
+                {
+                    withdrawStatus.message = "Unbale to withdraw";
+                    withdrawStatus.source_balance = account.Balance;
+                    withdrawStatus.destination_balance = account.Balance;
+                   
+                       _log4net.Error("Unable to withdraw");
+                  
+                    _provider.addToTransactionHistory(withdrawStatus, account);
+                    return Ok(withdrawStatus);
+
+
+
+                }
+
+
                 return Ok(withdrawStatus);
             }
             catch (ArgumentNullException e)
