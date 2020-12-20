@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\AccountNUnitTest\\AccountNUnitTest.csproj": {}
+    "E:\\RBS-Nikita copy\\AccountNUnitTest\\AccountNUnitTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\AccountNUnitTest\\AccountNUnitTest.csproj": {
+    "E:\\RBS-Nikita copy\\AccountNUnitTest\\AccountNUnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\AccountNUnitTest\\AccountNUnitTest.csproj",
+        "projectUniqueName": "E:\\RBS-Nikita copy\\AccountNUnitTest\\AccountNUnitTest.csproj",
         "projectName": "AccountNUnitTest",
-        "projectPath": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\AccountNUnitTest\\AccountNUnitTest.csproj",
-        "packagesPath": "C:\\Users\\nikhitha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\AccountNUnitTest\\obj\\",
+        "projectPath": "E:\\RBS-Nikita copy\\AccountNUnitTest\\AccountNUnitTest.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "E:\\RBS-Nikita copy\\AccountNUnitTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nikhitha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\AccountService\\AccountService.csproj": {
-                "projectPath": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\AccountService\\AccountService.csproj"
+              "E:\\RBS-Nikita copy\\AccountService\\AccountService.csproj": {
+                "projectPath": "E:\\RBS-Nikita copy\\AccountService\\AccountService.csproj"
               }
             }
           }
@@ -77,21 +77,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\AccountService\\AccountService.csproj": {
+    "E:\\RBS-Nikita copy\\AccountService\\AccountService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\AccountService\\AccountService.csproj",
+        "projectUniqueName": "E:\\RBS-Nikita copy\\AccountService\\AccountService.csproj",
         "projectName": "AccountService",
-        "projectPath": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\AccountService\\AccountService.csproj",
-        "packagesPath": "C:\\Users\\nikhitha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\AccountService\\obj\\",
+        "projectPath": "E:\\RBS-Nikita copy\\AccountService\\AccountService.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "E:\\RBS-Nikita copy\\AccountService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nikhitha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -115,6 +115,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
               "version": "[3.1.10, )"
@@ -154,7 +158,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

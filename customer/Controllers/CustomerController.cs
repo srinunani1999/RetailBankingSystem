@@ -55,6 +55,7 @@ namespace CustomerServices.Controllers
             }
             catch (Exception e)
             {
+                _log4net.Info("exception due to "+e.Message);
                 return BadRequest();
             }
 

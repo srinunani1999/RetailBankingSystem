@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\RetailBankSystemClient\\RetailBankSystemClient.csproj": {}
+    "E:\\RBS-Nikita copy\\RetailBankSystemClient\\RetailBankSystemClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\RetailBankSystemClient\\RetailBankSystemClient.csproj": {
+    "E:\\RBS-Nikita copy\\RetailBankSystemClient\\RetailBankSystemClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\RetailBankSystemClient\\RetailBankSystemClient.csproj",
+        "projectUniqueName": "E:\\RBS-Nikita copy\\RetailBankSystemClient\\RetailBankSystemClient.csproj",
         "projectName": "RetailBankSystemClient",
-        "projectPath": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\RetailBankSystemClient\\RetailBankSystemClient.csproj",
-        "packagesPath": "C:\\Users\\nikhitha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikhitha\\Desktop\\RBSFinalCode\\RetailBankSystemClient\\obj\\",
+        "projectPath": "E:\\RBS-Nikita copy\\RetailBankSystemClient\\RetailBankSystemClient.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "E:\\RBS-Nikita copy\\RetailBankSystemClient\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nikhitha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -91,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
